@@ -1,5 +1,5 @@
 # ExpressiveRobot-SeniorProject
-This project was inspired by and partially based on the open-source designs from InMoov: [https://inmoov.fr/headi2/]
+This project was inspired by and partially based on the open-source designs from [InMoov i2 head](https://inmoov.fr/headi2/)
 
 # AI-Powered Humanoid Head
 
