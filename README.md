@@ -57,8 +57,17 @@ This project showcases an **AI-powered humanoid robot head** capable of seeing, 
 - Designed **mechanical and circuit integration**, including **PCA9685 servo driver and external power supply**, for stable and precise motion.  
 - Delivered a **full-scale bachelor’s project**, demonstrating skills in AI, embedded systems, and hardware-software co-design.
 
+## Photos documenting the robot construction process and development progress are included below
 
-  SKINS:
-  <img width="493" height="657" alt="image" src="https://github.com/user-attachments/assets/63d3839b-8d45-4043-84e4-1defd22e75f5" />    <img width="841" height="753" alt="image" src="https://github.com/user-attachments/assets/8fe4ade2-7354-4e2e-9f1d-b9a64295c53d" />   
+<img width="966" height="732" alt="image" src="https://github.com/user-attachments/assets/f0243aaf-3dcd-4031-b07a-eba5335e8777" />
 
+<img width="484" height="553" alt="image" src="https://github.com/user-attachments/assets/4d4d2aa9-421c-427a-bae8-e0af3d0996f3" />
+
+<img width="493" height="657" alt="image" src="https://github.com/user-attachments/assets/63d3839b-8d45-4043-84e4-1defd22e75f5" />   
+
+<img width="841" height="753" alt="image" src="https://github.com/user-attachments/assets/8fe4ade2-7354-4e2e-9f1d-b9a64295c53d" />   
+
+<img width="446" height="669" alt="image" src="https://github.com/user-attachments/assets/52dc6e30-f357-40d1-91bf-ba6b2d5400e2" />
+
+  
 
