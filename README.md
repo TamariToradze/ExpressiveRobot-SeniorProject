@@ -2,13 +2,11 @@
 This project was inspired by and partially based on the open-source designs from [InMoov i2 head](https://inmoov.fr/headi2/)
 
 # AI-Powered Humanoid Head
+**Bachelor’s Project | Electrical & Computer Engineering**  
+This project showcases an **AI-powered humanoid robot head** capable of seeing, speaking, tracking faces, and expressing emotions in real-time. The system integrates **hardware, embedded controllers, and AI software**, controlled via a laptop for flexibility and rapid development.  
+
 
 <img width="484" height="673" alt="image" src="https://github.com/user-attachments/assets/fa975d7f-cd77-4cb1-a82c-a1b4736e7f01" />
-
-
-**Bachelor’s Project | Electrical & Computer Engineering**  
-
-This project showcases an **AI-powered humanoid robot head** capable of seeing, speaking, tracking faces, and expressing emotions in real-time. The system integrates **hardware, embedded controllers, and AI software**, controlled via a laptop for flexibility and rapid development.  
 
 ---
 
