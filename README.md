@@ -57,4 +57,8 @@ This project showcases an **AI-powered humanoid robot head** capable of seeing, 
 - Designed **mechanical and circuit integration**, including **PCA9685 servo driver and external power supply**, for stable and precise motion.  
 - Delivered a **full-scale bachelor’s project**, demonstrating skills in AI, embedded systems, and hardware-software co-design.
 
-  
+
+  SKINS:
+  <img width="493" height="657" alt="image" src="https://github.com/user-attachments/assets/63d3839b-8d45-4043-84e4-1defd22e75f5" />    <img width="841" height="753" alt="image" src="https://github.com/user-attachments/assets/8fe4ade2-7354-4e2e-9f1d-b9a64295c53d" />   
+
+
