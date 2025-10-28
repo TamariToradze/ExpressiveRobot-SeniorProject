@@ -69,5 +69,11 @@ This project showcases an **AI-powered humanoid robot head** capable of seeing, 
 
 <img width="446" height="669" alt="image" src="https://github.com/user-attachments/assets/52dc6e30-f357-40d1-91bf-ba6b2d5400e2" />
 
+<img width="365" height="619" alt="image" src="https://github.com/user-attachments/assets/f5df640d-808e-4a8a-83a6-ad0eb48e503b" />
+
+<img width="408" height="518" alt="image" src="https://github.com/user-attachments/assets/97dff34f-d4ec-41a8-9984-058d7a4dd46c" />
+
+
+
   
 
