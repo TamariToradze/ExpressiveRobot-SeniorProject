@@ -3,6 +3,9 @@ This project was inspired by and partially based on the open-source designs from
 
 # AI-Powered Humanoid Head
 
+<img width="484" height="673" alt="image" src="https://github.com/user-attachments/assets/fa975d7f-cd77-4cb1-a82c-a1b4736e7f01" />
+
+
 **Bachelor’s Project | Electrical & Computer Engineering**  
 
 This project showcases an **AI-powered humanoid robot head** capable of seeing, speaking, tracking faces, and expressing emotions in real-time. The system integrates **hardware, embedded controllers, and AI software**, controlled via a laptop for flexibility and rapid development.  
@@ -54,4 +57,6 @@ This project showcases an **AI-powered humanoid robot head** capable of seeing, 
 - Developed **face tracking and emotion recognition** pipeline for real-time interaction.  
 - Implemented **audio I/O via microphone and speakers** for natural communication.  
 - Designed **mechanical and circuit integration**, including **PCA9685 servo driver and external power supply**, for stable and precise motion.  
-- Delivered a **full-scale bachelor’s project**, demonstrating skills in AI, embedded systems, and hardware-software co-design.  
+- Delivered a **full-scale bachelor’s project**, demonstrating skills in AI, embedded systems, and hardware-software co-design.
+
+  
