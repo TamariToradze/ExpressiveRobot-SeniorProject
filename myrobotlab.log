@@ -1,0 +1,420 @@
+15:04:27.949 [main] INFO c.m.i.FileIO [FileIO.java:236] extract(root=/C:/Users/pc/oop/ExpressiveRobot-SeniorProject/MRL/myrobotlab-1.1.1606/myrobotlab.jar, src=resource, dst=null, overwrite=false)
+15:04:27.983 [main] INFO c.m.i.FileIO [FileIO.java:266] normalized extract([/C:/Users/pc/oop/ExpressiveRobot-SeniorProject/MRL/myrobotlab-1.1.1606/myrobotlab.jar], [resource], [.])
+15:04:28.073 [main] INFO c.m.i.FileIO [FileIO.java:282] ./resource aleady exists - not extracting
+15:04:33.336 [main] INFO c.m.s.Runtime [ConfigUtils.java:117] start.yml exists true {"config":"default","enable":false,"class":"org.myrobotlab.framework.StartYml"}
+15:04:33.351 [main] INFO c.m.s.Runtime [ConfigUtils.java:117] start.yml exists true {"config":"default","enable":false,"class":"org.myrobotlab.framework.StartYml"}
+15:04:33.907 [main] INFO c.m.s.Runtime [Runtime.java:667] Runtime.createService runtime
+15:04:33.909 [main] INFO c.m.f.Service [Service.java:620] constructing runtime
+15:04:33.940 [main] INFO c.m.f.MethodCache [MethodCache.java:156] caching Runtime's 457 methods and 247 declared methods
+15:04:34.008 [main] INFO c.m.f.MethodCache [MethodCache.java:202] cached Runtime 456 methods with 432 ordinal signatures in 83 ms
+15:04:34.056 [main] INFO c.m.f.Registration [Registration.java:70] creating registration for runtime@unequaled-saturn3 - org.myrobotlab.service.Runtime
+15:04:34.616 [main] INFO c.m.s.Runtime [Runtime.java:1775] runtime@unequaled-saturn3 registering at unequaled-saturn3 of type org.myrobotlab.service.Runtime
+15:04:56.902 [main] INFO c.m.f.r.ServiceData [ServiceData.java:192] returning cached serviceData.json from libraries\serviceData.json
+15:04:56.921 [main] INFO c.m.f.r.Repo [Repo.java:95] create repo libraries
+15:04:57.075 [main] INFO c.m.f.r.Repo [Repo.java:479] loading libraries\repo.json
+15:04:59.400 [main] INFO c.m.f.r.Repo [Repo.java:506] finished processing libraries\repo.json
+15:04:59.403 [main] INFO c.m.i.FileIO [FileIO.java:873] looking for resource framework/ivy.xml.template
+15:04:59.417 [main] INFO c.m.i.FileIO [FileIO.java:873] looking for resource framework/ivysettings.xml.template
+15:04:59.983 [main] INFO c.m.s.Runtime [Runtime.java:667] Runtime.createService runtime
+15:04:59.987 [main] INFO c.m.f.Service [Service.java:2081] starting runtime
+15:05:00.035 [main] INFO c.m.f.Registration [Registration.java:70] creating registration for runtime@unequaled-saturn3 - org.myrobotlab.service.Runtime
+15:05:00.301 [main] INFO c.m.s.Runtime [Runtime.java:1765] runtime@unequaled-saturn3 already registered
+15:05:00.312 [main] INFO c.m.i.FileIO [FileIO.java:236] extract(root=/C:/Users/pc/oop/ExpressiveRobot-SeniorProject/MRL/myrobotlab-1.1.1606/myrobotlab.jar, src=resource, dst=null, overwrite=false)
+15:05:00.334 [main] INFO c.m.i.FileIO [FileIO.java:266] normalized extract([/C:/Users/pc/oop/ExpressiveRobot-SeniorProject/MRL/myrobotlab-1.1.1606/myrobotlab.jar], [resource], [.])
+15:05:00.351 [main] INFO c.m.i.FileIO [FileIO.java:282] ./resource aleady exists - not extracting
+15:05:00.369 [main] INFO c.m.p.InProcessCli [InProcessCli.java:123] starting runtime worker
+15:05:04.224 [main] INFO c.m.s.Runtime [RouteTable.java:31] adding route and setting default to id unequaled-saturn3-cli uuid 68fb225e-71d6-4989-ac7b-d5245042bdeb metric 10
+15:05:04.240 [main] INFO c.m.f.Service [Service.java:2737] runtime new locale is en-US
+15:05:04.405 [main] INFO c.m.s.Runtime [Runtime.java:3382] setLogLevel info
+15:05:04.422 [main] INFO c.m.s.Runtime [Runtime.java:3385] setLogLevel info
+15:05:04.428 [main] INFO c.m.f.Service [Service.java:2262] runtime info setting virtual to false
+15:05:04.446 [main] INFO c.m.s.Runtime [Runtime.java:917] command line services were specified
+15:05:04.459 [main] INFO c.m.s.Runtime [Runtime.java:554] services [log, Log, security, Security, webgui, WebGui, intro, Intro, python, Python]
+15:05:04.466 [main] INFO c.m.s.Runtime [Runtime.java:562] attempting to invoke : log of type Log
+15:05:04.474 [main] INFO c.m.s.Runtime [Runtime.java:4726] loading - log Log 0
+15:05:04.522 [main] INFO c.m.s.Runtime [Runtime.java:523] check - implement - dependencies and licensing
+15:05:04.523 [main] INFO c.m.s.Runtime [Runtime.java:667] Runtime.createService log
+15:05:04.527 [main] INFO c.m.f.Service [Service.java:620] constructing log
+15:05:04.528 [main] INFO c.m.f.MethodCache [MethodCache.java:156] caching Log's 253 methods and 36 declared methods
+15:05:04.539 [main] INFO c.m.f.MethodCache [MethodCache.java:202] cached Log 251 methods with 230 ordinal signatures in 12 ms
+15:05:04.547 [main] INFO c.m.f.Registration [Registration.java:70] creating registration for log@unequaled-saturn3 - org.myrobotlab.service.Log
+15:05:04.598 [main] INFO c.m.s.Runtime [Runtime.java:1775] log@unequaled-saturn3 registering at unequaled-saturn3 of type org.myrobotlab.service.Log
+15:05:04.642 [main] INFO c.m.f.Service [Service.java:2081] starting log
+15:05:04.681 [main] INFO c.m.s.Runtime [Runtime.java:562] attempting to invoke : security of type Security
+15:05:04.813 [main] INFO c.m.s.Runtime [Runtime.java:4726] loading - security Security 0
+15:05:04.842 [main] INFO c.m.s.Runtime [Runtime.java:523] check - implement - dependencies and licensing
+15:05:04.846 [main] INFO c.m.s.Runtime [Runtime.java:667] Runtime.createService security
+15:05:04.918 [main] INFO c.m.f.Service [Service.java:620] constructing security
+15:05:04.950 [main] INFO c.m.f.MethodCache [MethodCache.java:156] caching Security's 253 methods and 37 declared methods
+15:05:05.130 [main] INFO c.m.f.MethodCache [MethodCache.java:202] cached Security 252 methods with 234 ordinal signatures in 199 ms
+15:05:05.161 [main] INFO c.m.f.Registration [Registration.java:70] creating registration for security@unequaled-saturn3 - org.myrobotlab.service.Security
+15:05:05.181 [main] INFO c.m.s.Runtime [Runtime.java:1775] security@unequaled-saturn3 registering at unequaled-saturn3 of type org.myrobotlab.service.Security
+15:05:05.184 [main] INFO c.m.s.Security [Security.java:643] security loading secure store file data\Security\store
+15:05:05.189 [main] INFO c.m.s.Security [Security.java:655] Security.loadStore file not found data\Security\store
+15:05:05.200 [main] INFO c.m.f.Service [Service.java:2081] starting security
+15:05:05.202 [main] INFO c.m.s.Runtime [Runtime.java:562] attempting to invoke : webgui of type WebGui
+15:05:05.208 [main] INFO c.m.s.Runtime [Runtime.java:4726] loading - webgui WebGui 0
+15:05:05.239 [main] INFO c.m.s.Runtime [Runtime.java:523] check - implement - dependencies and licensing
+15:05:05.242 [main] INFO c.m.s.Runtime [Runtime.java:667] Runtime.createService webgui
+15:05:05.747 [main] INFO c.m.f.Service [Service.java:620] constructing webgui
+15:05:06.082 [main] INFO c.m.f.MethodCache [MethodCache.java:156] caching WebGui's 276 methods and 60 declared methods
+15:05:06.118 [main] INFO c.m.f.MethodCache [MethodCache.java:202] cached WebGui 274 methods with 254 ordinal signatures in 156 ms
+15:05:06.132 [main] INFO c.m.f.Registration [Registration.java:70] creating registration for webgui@unequaled-saturn3 - org.myrobotlab.service.WebGui
+15:05:06.164 [main] INFO c.m.s.Runtime [Runtime.java:1775] webgui@unequaled-saturn3 registering at unequaled-saturn3 of type org.myrobotlab.service.WebGui
+15:05:06.181 [main] INFO c.m.f.Service [Service.java:2081] starting webgui
+15:05:06.188 [main] INFO c.m.s.WebGui [WebGui.java:1004] starting webgui service....
+15:05:11.073 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:606] Installed AtmosphereHandler org.atmosphere.nettosphere.Config$Builder$1 mapped to context-path: /stream
+15:05:11.116 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:607] Installed the following AtmosphereInterceptor mapped to AtmosphereHandler org.atmosphere.nettosphere.Config$Builder$1
+15:05:11.132 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:606] Installed AtmosphereHandler org.atmosphere.nettosphere.Config$Builder$1 mapped to context-path: /api
+15:05:11.145 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:607] Installed the following AtmosphereInterceptor mapped to AtmosphereHandler org.atmosphere.nettosphere.Config$Builder$1
+15:05:11.446 [main] WARN o.a.c.AtmosphereFramework [AtmosphereFramework.java:1470] SessionSupport error. Make sure you also define org.atmosphere.cpr.SessionSupport as a listener in web.xml, see https://github.com/Atmosphere/atmosphere/wiki/Enabling-HttpSession-Support
+15:05:11.563 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:2838] Atmosphere is using org.atmosphere.cpr.DefaultAnnotationProcessor for processing annotation
+15:05:11.589 [main] INFO o.a.c.DefaultAnnotationProcessor [DefaultAnnotationProcessor.java:151] AnnotationProcessor class org.atmosphere.cpr.DefaultAnnotationProcessor$BytecodeBasedAnnotationProcessor being used
+15:05:13.765 [main] INFO o.a.u.ForkJoinPool [ForkJoinPool.java:48] Using ForkJoinPool  java.util.concurrent.ForkJoinPool. Set the org.atmosphere.cpr.broadcaster.maxAsyncWriteThreads to -1 to fully use its power.
+15:05:14.035 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1759] Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+15:05:14.071 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1218] Installing Default AtmosphereInterceptors
+15:05:14.098 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1237] 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+15:05:14.155 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1237] 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+15:05:14.197 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1237] 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+15:05:14.212 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1237] 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+15:05:14.259 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1237] 	org.atmosphere.interceptor.HeartbeatInterceptor : Heartbeat Interceptor Support
+15:05:14.276 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1237] 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+15:05:14.326 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1237] 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+15:05:14.386 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1237] 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+15:05:14.461 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1237] 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+15:05:14.496 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1237] 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+15:05:14.536 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1237] 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+15:05:14.550 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1227] Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+15:05:14.726 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:2629] Installed AtmosphereInterceptor CORS Interceptor Support with priority FIRST_BEFORE_DEFAULT 
+15:05:15.080 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:2629] Installed AtmosphereInterceptor Default Response's Headers Interceptor with priority AFTER_DEFAULT 
+15:05:15.203 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:2629] Installed AtmosphereInterceptor Browser Padding Interceptor Support with priority AFTER_DEFAULT 
+15:05:15.213 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:2629] Installed AtmosphereInterceptor Android Interceptor Support with priority AFTER_DEFAULT 
+15:05:15.225 [main] INFO o.a.i.HeartbeatInterceptor [HeartbeatInterceptor.java:158] HeartbeatInterceptor configured with padding value 'X', client frequency 0 seconds and server frequency 60 seconds
+15:05:15.234 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:2629] Installed AtmosphereInterceptor Heartbeat Interceptor Support with priority AFTER_DEFAULT 
+15:05:15.243 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:2629] Installed AtmosphereInterceptor SSE Interceptor Support with priority AFTER_DEFAULT 
+15:05:15.244 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:2629] Installed AtmosphereInterceptor JSONP Interceptor Support with priority AFTER_DEFAULT 
+15:05:15.246 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:2629] Installed AtmosphereInterceptor Atmosphere JavaScript Protocol with priority AFTER_DEFAULT 
+15:05:15.257 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:2629] Installed AtmosphereInterceptor org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor with priority AFTER_DEFAULT 
+15:05:15.262 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:2629] Installed AtmosphereInterceptor Browser disconnection detection with priority AFTER_DEFAULT 
+15:05:15.264 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:2629] Installed AtmosphereInterceptor org.atmosphere.interceptor.IdleResourceInterceptor with priority BEFORE_DEFAULT 
+15:05:15.303 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1030] Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+15:05:15.314 [main] WARN o.a.c.AtmosphereFramework [AtmosphereFramework.java:1036] No BroadcasterCache configured. Broadcasted message between client reconnection will be LOST. It is recommended to configure the org.atmosphere.cache.UUIDBroadcasterCache
+15:05:15.316 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1044] Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+15:05:15.321 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1045] Broadcaster Shared List Resources: false
+15:05:15.324 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1046] Broadcaster Polling Wait Time 100
+15:05:15.326 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1047] Shared ExecutorService supported: true
+15:05:15.326 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1056] Messaging ExecutorService Pool Size unavailable - Not instance of ThreadPoolExecutor
+15:05:15.328 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1063] Async I/O Thread Pool Size: 200
+15:05:15.379 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1069] Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+15:05:15.383 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1070] Using AtmosphereResurceFactory: org.atmosphere.cpr.DefaultAtmosphereResourceFactory
+15:05:15.385 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1071] Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+15:05:15.476 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1081] Invoke AtmosphereInterceptor on WebSocket message true
+15:05:15.490 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1082] HttpSession supported: true
+15:05:15.504 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1084] Atmosphere is using DefaultAtmosphereObjectFactory for dependency injection and object creation
+15:05:15.510 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1085] Atmosphere is using async support: org.atmosphere.container.NettyCometSupport running under container: Nettosphere/3.0
+15:05:15.632 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1087] Atmosphere Framework 2.6.4 started.
+15:05:15.852 [main] INFO o.a.c.AtmosphereFramework [AtmosphereFramework.java:1089] 
+
+	For Atmosphere Framework Commercial Support, visit 
+	http://www.async-io.org/ or send an email to support@async-io.org
+
+15:05:23.122 [main] INFO o.a.n.Nettosphere [Nettosphere.java:127] NettoSphere 3.2.2 Started.
+15:05:23.125 [main] INFO c.m.s.WebGui [WebGui.java:1037] WebGui webgui started on port 8888
+15:05:23.131 [main] INFO c.m.f.Service [Service.java:2149] subscribe [runtime@unequaled-saturn3/registered ---> webgui@unequaled-saturn3/onRegistered]
+15:05:23.142 [main] INFO c.m.f.Service [Service.java:2149] subscribe [runtime@unequaled-saturn3/released ---> webgui@unequaled-saturn3/onReleased]
+15:05:23.144 [main] INFO c.m.s.WebGui [WebGui.java:1055] auto starting default browser
+15:05:43.819 [main] INFO c.m.s.Runtime [Runtime.java:562] attempting to invoke : intro of type Intro
+15:05:43.942 [main] INFO c.m.s.Runtime [Runtime.java:4726] loading - intro Intro 0
+15:05:44.514 [main] INFO c.m.s.Runtime [Runtime.java:523] check - implement - dependencies and licensing
+15:05:44.647 [main] INFO c.m.s.Runtime [Runtime.java:667] Runtime.createService intro
+15:05:44.766 [main] INFO c.m.f.Service [Service.java:620] constructing intro
+15:05:44.991 [main] INFO c.m.f.MethodCache [MethodCache.java:156] caching Intro's 229 methods and 8 declared methods
+15:05:45.267 [main] INFO c.m.f.MethodCache [MethodCache.java:202] cached Intro 228 methods with 210 ordinal signatures in 284 ms
+15:05:45.417 [main] INFO c.m.f.Registration [Registration.java:70] creating registration for intro@unequaled-saturn3 - org.myrobotlab.service.Intro
+15:05:45.518 [main] INFO c.m.s.Runtime [Runtime.java:1775] intro@unequaled-saturn3 registering at unequaled-saturn3 of type org.myrobotlab.service.Intro
+15:05:45.601 [main] INFO c.m.f.Service [Service.java:2149] subscribe [runtime@unequaled-saturn3/registered ---> intro@unequaled-saturn3/registered]
+15:05:45.672 [main] INFO c.m.f.Service [Service.java:2149] subscribe [runtime@unequaled-saturn3/released ---> intro@unequaled-saturn3/released]
+15:05:45.832 [main] INFO c.m.f.Service [Service.java:2081] starting intro
+15:05:45.885 [main] INFO c.m.s.Runtime [Runtime.java:562] attempting to invoke : python of type Python
+15:05:45.936 [main] INFO c.m.s.Runtime [Runtime.java:4726] loading - python Python 0
+15:05:46.832 [main] INFO c.m.s.Runtime [Runtime.java:523] check - implement - dependencies and licensing
+15:05:47.202 [main] INFO c.m.s.Runtime [Runtime.java:667] Runtime.createService python
+15:05:48.710 [main] INFO c.m.f.Service [Service.java:620] constructing python
+15:05:48.942 [main] INFO c.m.f.MethodCache [MethodCache.java:156] caching Python's 271 methods and 57 declared methods
+15:05:49.223 [main] INFO c.m.f.MethodCache [MethodCache.java:202] cached Python 269 methods with 250 ordinal signatures in 507 ms
+15:05:49.241 [main] INFO c.m.f.Registration [Registration.java:70] creating registration for python@unequaled-saturn3 - org.myrobotlab.service.Python
+15:05:49.470 [main] INFO c.m.s.Runtime [Runtime.java:1775] python@unequaled-saturn3 registering at unequaled-saturn3 of type org.myrobotlab.service.Python
+15:05:49.476 [main] INFO c.m.s.Python [Python.java:886] created python python
+15:06:04.719 [nioEventLoopGroup-3-13] INFO c.m.s.Runtime [RouteTable.java:31] adding route and setting default to id webgui-client uuid 00ae7d02-65a9-47a2-9e93-8dc3973d8df4 metric 10
+15:06:05.264 [nioEventLoopGroup-3-13] INFO c.m.s.WebGui [WebGui.java:528] <-- webgui@unequaled-saturn3. --> runtime.describe(String,DescribeQuery) - 1761563165101
+15:06:06.195 [runtime] INFO c.m.f.Registration [Registration.java:70] creating registration for intro@unequaled-saturn3 - org.myrobotlab.service.Intro
+15:06:06.529 [runtime] INFO c.m.f.Registration [Registration.java:70] creating registration for log@unequaled-saturn3 - org.myrobotlab.service.Log
+15:06:07.978 [runtime] INFO c.m.f.Registration [Registration.java:70] creating registration for python@unequaled-saturn3 - org.myrobotlab.service.Python
+15:06:08.312 [runtime] INFO c.m.f.Registration [Registration.java:70] creating registration for runtime@unequaled-saturn3 - org.myrobotlab.service.Runtime
+15:06:08.952 [runtime] INFO c.m.f.Registration [Registration.java:70] creating registration for security@unequaled-saturn3 - org.myrobotlab.service.Security
+15:06:08.957 [runtime] INFO c.m.f.Registration [Registration.java:70] creating registration for webgui@unequaled-saturn3 - org.myrobotlab.service.WebGui
+15:06:08.967 [runtime] INFO c.m.f.Registration [Registration.java:70] creating registration for intro@unequaled-saturn3 - org.myrobotlab.service.Intro
+15:06:08.978 [runtime] INFO c.m.f.Registration [Registration.java:70] creating registration for log@unequaled-saturn3 - org.myrobotlab.service.Log
+15:06:08.994 [runtime] INFO c.m.f.Registration [Registration.java:70] creating registration for python@unequaled-saturn3 - org.myrobotlab.service.Python
+15:06:09.003 [runtime] INFO c.m.f.Registration [Registration.java:70] creating registration for runtime@unequaled-saturn3 - org.myrobotlab.service.Runtime
+15:06:09.006 [runtime] INFO c.m.f.Registration [Registration.java:70] creating registration for security@unequaled-saturn3 - org.myrobotlab.service.Security
+15:06:09.026 [runtime] INFO c.m.f.Registration [Registration.java:70] creating registration for webgui@unequaled-saturn3 - org.myrobotlab.service.WebGui
+15:06:44.753 [main] INFO c.m.s.Python [Python.java:424] Python System Path: ['C:\\Users\\pc\\oop\\ExpressiveRobot-SeniorProject\\MRL\\myrobotlab-1.1.1606\\libraries\\jar\\Lib', 'C:\\Users\\pc\\oop\\ExpressiveRobot-SeniorProject\\MRL\\myrobotlab-1.1.1606\\libraries\\jar\\jython-standalone-2.7.2.jar/Lib', '__classpath__', '__pyclasspath__/', 'resource\\Python\\modules']
+15:07:01.156 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+import sys
+
+class Console:
+
+  def __init__(self):
+    self.stdout = None
+    self.stderr = None
+    
+  def write(self,string):
+    if myService is not None:
+        myService.invoke(u'publishStdOut', string)
+    
+  def attach(self):
+    if (self.stdout == None):    
+      self.stdout = sys.stdout
+      self.stderr = sys.stderr
+      sys.stdout = self
+      sys.stderr = self
+   
+  def flush(self):
+    pass
+    
+  def detach(self):
+    if (self.stdout != None):
+      sys.stdout = self.stdout
+      sys.stderr = self.stderr
+      self.stdout = None
+      self.stderr = None
+    
+console = Console()
+console.attach()
+
+15:07:03.613 [main] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:03.615 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import Intro
+intro = Runtime.getService("intro")
+
+15:07:03.623 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import Security
+security = Runtime.getService("security")
+
+15:07:03.624 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import Log
+log = Runtime.getService("log")
+
+15:07:03.626 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import Runtime
+runtime = Runtime.getService("runtime")
+
+15:07:03.635 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import WebGui
+webgui = Runtime.getService("webgui")
+
+15:07:03.637 [main] INFO c.m.s.Python [Python.java:922] starting python python
+15:07:03.638 [main] INFO c.m.s.Python [Python.java:924] started python python
+15:07:03.662 [python.interpreter.2] INFO c.m.s.Python [Python.java:176] script completed
+15:07:03.666 [python.interpreter.1] INFO c.m.s.Python [Python.java:176] script completed
+15:07:03.687 [python.interpreter.2] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:03.684 [main] INFO c.m.s.Python [Python.java:986] Python System Path: ['C:\\Users\\pc\\oop\\ExpressiveRobot-SeniorProject\\MRL\\myrobotlab-1.1.1606\\libraries\\jar\\Lib', 'C:\\Users\\pc\\oop\\ExpressiveRobot-SeniorProject\\MRL\\myrobotlab-1.1.1606\\libraries\\jar\\jython-standalone-2.7.2.jar\\Lib', '__classpath__', '__pyclasspath__/', 'resource\\Python\\modules', 'resource\\Python\\modules']
+15:07:03.689 [python.interpreter.1] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:03.690 [main] INFO c.m.f.Service [Service.java:2081] starting python
+15:07:03.712 [python.interpreter.3] INFO c.m.s.Python [Python.java:176] script completed
+15:07:03.732 [python.interpreter.5] INFO c.m.s.Python [Python.java:176] script completed
+15:07:03.734 [python.interpreter.4] INFO c.m.s.Python [Python.java:176] script completed
+15:07:03.862 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import Intro
+intro = Runtime.getService("intro")
+
+15:07:03.890 [python.interpreter.3] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:03.927 [python.interpreter.5] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:03.936 [python.interpreter.4] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:03.944 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import Python
+python = Runtime.getService("python")
+
+15:07:03.969 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import Security
+security = Runtime.getService("security")
+
+15:07:03.970 [python.interpreter.6] INFO c.m.s.Python [Python.java:176] script completed
+15:07:03.971 [python.interpreter.6] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:03.971 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import Log
+log = Runtime.getService("log")
+
+15:07:03.975 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import Runtime
+runtime = Runtime.getService("runtime")
+
+15:07:03.976 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import WebGui
+webgui = Runtime.getService("webgui")
+
+15:07:03.987 [python.interpreter.7] INFO c.m.s.Python [Python.java:176] script completed
+15:07:03.988 [python.interpreter.7] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:03.994 [python.interpreter.8] INFO c.m.s.Python [Python.java:176] script completed
+15:07:03.994 [python.interpreter.9] INFO c.m.s.Python [Python.java:176] script completed
+15:07:04.003 [python.interpreter.8] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:04.010 [python.interpreter.9] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:04.036 [python.interpreter.11] INFO c.m.s.Python [Python.java:176] script completed
+15:07:04.040 [python.interpreter.11] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:04.051 [python.interpreter.10] INFO c.m.s.Python [Python.java:176] script completed
+15:07:04.059 [python.interpreter.10] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:04.240 [main] INFO c.m.f.Service [Service.java:2737] runtime new locale is en-US
+15:07:04.270 [main] INFO c.m.s.Runtime [Runtime.java:2872] ============== args begin ==============
+15:07:04.296 [main] INFO c.m.s.Runtime [Runtime.java:2882] jvmArgs [-Djava.library.path=libraries/native, -Djna.library.path=libraries/native, -Dfile.encoding=UTF-8]
+15:07:04.311 [main] INFO c.m.s.Runtime [Runtime.java:2884] file.encoding UTF-8
+15:07:04.316 [main] INFO c.m.s.Runtime [Runtime.java:2885] args [--log-level, info, -s, log, Log, security, Security, webgui, WebGui, intro, Intro, python, Python]
+15:07:04.322 [main] INFO c.m.s.Runtime [Runtime.java:2887] ============== args end ==============
+15:07:04.332 [main] INFO c.m.s.Runtime [Runtime.java:2889] ============== env begin ==============
+15:07:04.335 [main] INFO c.m.s.Runtime [Runtime.java:2895] PATH not defined
+15:07:04.336 [main] INFO c.m.s.Runtime [Runtime.java:2898] JAVA_HOME=C:\Program Files\BellSoft\LibericaJDK-8-Full\
+15:07:04.340 [main] INFO c.m.s.Runtime [Runtime.java:2907] PROCESSOR_ARCHITECTURE=AMD64
+15:07:04.340 [main] INFO c.m.s.Runtime [Runtime.java:2914] PROCESSOR_ARCHITEW6432 not defined
+15:07:04.341 [main] INFO c.m.s.Runtime [Runtime.java:2916] ============== env end ==============
+15:07:04.342 [main] INFO c.m.s.Runtime [Runtime.java:2918] ============== platform ==============
+15:07:04.354 [main] INFO c.m.s.Runtime [Runtime.java:2920] 2025/10/27 15:04:14 - GMT - 2025/10/27 11:04:14
+15:07:04.356 [main] INFO c.m.s.Runtime [Runtime.java:2921] pid 18748
+15:07:04.357 [main] INFO c.m.s.Runtime [Runtime.java:2922] hostname tamuna
+15:07:04.357 [main] INFO c.m.s.Runtime [Runtime.java:2923] ivy [runtime,x86.64.windows]
+15:07:04.358 [main] INFO c.m.s.Runtime [Runtime.java:2924] version 1.1.1606 branch develop commit 58e30e5 build null
+15:07:04.361 [main] INFO c.m.s.Runtime [Runtime.java:2926] platform manifest {Build-Host=null, Build-Jdk-Spec=11, Build-Time=202507081136, Build-User=runner, Build-Version=1.1.1606, Created-By=Maven JAR Plugin 3.4.1, GitBranch=develop, GitBuildTime=2025-07-08T11:37:03+0000, GitBuildUserEmail=, GitBuildUserName=, GitBuildVersion=0.0.1-SNAPSHOT, GitClosestTagCommitCount=, GitClosestTagName=, GitCommitId=58e30e5ebe84e67522f0627f1c55c7c8c4ecca6c, GitCommitIdAbbrev=58e30e5, GitCommitIdDescribe=58e30e5, GitCommitIdDescribeShort=58e30e5, GitCommitIdFull=null, GitCommitTime=2025-07-08T11:25:12+0000, GitCommitUserEmail=hairygael@gmail.com, GitCommitUserName=Langevin Gael, GitDirty=false, GitRemoteOriginUrl=https://github.com/MyRobotLab/myrobotlab, GitTags=, Implementation-Version=1.1.1606, Main-Class=org.myrobotlab.service.Runtime, Major-Version=1.1.1606, Manifest-Version=1.0}
+15:07:04.362 [main] INFO c.m.s.Runtime [Runtime.java:2927] platform [x86.64.windows}]
+15:07:04.363 [main] INFO c.m.s.Runtime [Runtime.java:2928] version [1.1.1606]
+15:07:04.364 [main] INFO c.m.s.Runtime [Runtime.java:2929] root [/C:/Users/pc/oop/ExpressiveRobot-SeniorProject/MRL/myrobotlab-1.1.1606/myrobotlab.jar]
+15:07:04.365 [main] INFO c.m.s.Runtime [Runtime.java:2930] cfg dir [data\.myrobotlab]
+15:07:04.369 [main] INFO c.m.s.Runtime [Runtime.java:2931] sun.arch.data.model [64]
+15:07:04.370 [main] INFO c.m.s.Runtime [Runtime.java:2933] ============== non-normalized ==============
+15:07:04.371 [main] INFO c.m.s.Runtime [Runtime.java:2934] os.name [Windows 11] getOS [windows]
+15:07:04.371 [main] INFO c.m.s.Runtime [Runtime.java:2935] os.arch [amd64] getArch [x86]
+15:07:04.372 [main] INFO c.m.s.Runtime [Runtime.java:2936] os.version [10.0]
+15:07:04.372 [main] INFO c.m.s.Runtime [Runtime.java:2938] java.vm.name [Java HotSpot(TM) 64-Bit Server VM]
+15:07:04.373 [main] INFO c.m.s.Runtime [Runtime.java:2939] java.vm.vendor [Oracle Corporation]
+15:07:04.373 [main] INFO c.m.s.Runtime [Runtime.java:2940] java.specification.version [19]
+15:07:04.374 [main] INFO c.m.s.Runtime [Runtime.java:2950] file.encoding [UTF-8]
+15:07:04.375 [main] INFO c.m.s.Runtime [Runtime.java:2951] Charset.defaultCharset() [UTF-8]
+15:07:04.375 [main] INFO c.m.s.Runtime [Runtime.java:2952] user.language [en]
+15:07:04.376 [main] INFO c.m.s.Runtime [Runtime.java:2953] user.country [US]
+15:07:04.376 [main] INFO c.m.s.Runtime [Runtime.java:2954] user.variant []
+15:07:04.377 [main] INFO c.m.s.Runtime [Runtime.java:2958] java.home [C:\Program Files\Java\jdk-19]
+15:07:04.378 [main] INFO c.m.s.Runtime [Runtime.java:2960] java.library.path [libraries/native]
+15:07:04.378 [main] INFO c.m.s.Runtime [Runtime.java:2961] user.dir [C:\Users\pc\oop\ExpressiveRobot-SeniorProject\MRL\myrobotlab-1.1.1606]
+15:07:04.379 [main] INFO c.m.s.Runtime [Runtime.java:2963] user.home [C:\Users\pc]
+15:07:04.379 [main] INFO c.m.s.Runtime [Runtime.java:2964] total mem [134] Mb
+15:07:04.380 [main] INFO c.m.s.Runtime [Runtime.java:2965] total free [56] Mb
+15:07:04.381 [main] INFO c.m.s.Runtime [Runtime.java:2970] guessed os bitness [64]
+15:07:04.381 [main] INFO c.m.s.Runtime [Runtime.java:2977] getting local repo
+15:07:04.385 [main] INFO c.m.f.Registration [Registration.java:70] creating registration for runtime@unequaled-saturn3 - org.myrobotlab.service.Runtime
+15:07:04.386 [python] INFO c.m.s.Python [Python.java:937] onCreated runtime@unequaled-saturn3
+15:07:04.389 [main] INFO c.m.s.Runtime [Runtime.java:1765] runtime@unequaled-saturn3 already registered
+15:07:04.390 [main] INFO c.m.i.FileIO [FileIO.java:236] extract(root=/C:/Users/pc/oop/ExpressiveRobot-SeniorProject/MRL/myrobotlab-1.1.1606/myrobotlab.jar, src=resource, dst=null, overwrite=false)
+15:07:04.391 [main] INFO c.m.i.FileIO [FileIO.java:266] normalized extract([/C:/Users/pc/oop/ExpressiveRobot-SeniorProject/MRL/myrobotlab-1.1.1606/myrobotlab.jar], [resource], [.])
+15:07:04.393 [main] INFO c.m.i.FileIO [FileIO.java:282] ./resource aleady exists - not extracting
+15:07:04.393 [main] INFO c.m.s.Runtime [Runtime.java:1668] already in interactive mode
+15:07:04.394 [main] INFO c.m.f.Service [Service.java:2737] runtime new locale is en-US
+15:07:04.395 [main] INFO c.m.s.Runtime [Runtime.java:3382] setLogLevel info
+15:07:04.396 [main] INFO c.m.s.Runtime [Runtime.java:3385] setLogLevel info
+15:07:04.398 [main] INFO c.m.f.Service [Service.java:2262] runtime info setting virtual to false
+15:07:04.398 [main] INFO c.m.s.Runtime [Runtime.java:917] command line services were specified
+15:07:04.401 [main] INFO c.m.s.Runtime [Runtime.java:554] services [log, Log, security, Security, webgui, WebGui, intro, Intro, python, Python]
+15:07:04.401 [main] INFO c.m.s.Runtime [Runtime.java:562] attempting to invoke : log of type Log
+15:07:04.402 [main] INFO c.m.f.Service [Service.java:817] already have active task "flush"
+15:07:04.403 [main] INFO c.m.s.Runtime [Runtime.java:562] attempting to invoke : security of type Security
+15:07:04.403 [main] INFO c.m.s.Runtime [Runtime.java:562] attempting to invoke : webgui of type WebGui
+15:07:04.404 [main] INFO c.m.s.WebGui [WebGui.java:1004] starting webgui service....
+15:07:04.404 [main] INFO c.m.s.WebGui [WebGui.java:1016] webgui already started on port 8888
+15:07:04.405 [main] INFO c.m.s.Runtime [Runtime.java:562] attempting to invoke : intro of type Intro
+15:07:04.405 [main] INFO c.m.s.Runtime [Runtime.java:562] attempting to invoke : python of type Python
+15:07:04.406 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import Intro
+intro = Runtime.getService("intro")
+
+15:07:04.408 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import Python
+python = Runtime.getService("python")
+
+15:07:04.409 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import Security
+security = Runtime.getService("security")
+
+15:07:04.410 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import Log
+log = Runtime.getService("log")
+
+15:07:04.412 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import Runtime
+runtime = Runtime.getService("runtime")
+
+15:07:04.413 [main] INFO c.m.s.Python [Python.java:463] exec(String) 
+from org.myrobotlab.framework import Platform
+from org.myrobotlab.service import Runtime
+from org.myrobotlab.framework import Service
+from org.myrobotlab.service import WebGui
+webgui = Runtime.getService("webgui")
+
+15:07:04.418 [python.interpreter.12] INFO c.m.s.Python [Python.java:176] script completed
+15:07:04.420 [python.interpreter.12] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:04.429 [python.interpreter.13] INFO c.m.s.Python [Python.java:176] script completed
+15:07:04.434 [python.interpreter.13] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:04.436 [python.interpreter.17] INFO c.m.s.Python [Python.java:176] script completed
+15:07:04.436 [python.interpreter.16] INFO c.m.s.Python [Python.java:176] script completed
+15:07:04.437 [python.interpreter.17] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:04.437 [python.interpreter.16] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:04.490 [python.interpreter.15] INFO c.m.s.Python [Python.java:176] script completed
+15:07:04.493 [python.interpreter.15] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:07:04.552 [python.interpreter.14] INFO c.m.s.Python [Python.java:176] script completed
+15:07:04.556 [python.interpreter.14] INFO c.m.s.Python [Python.java:582] finishedExecutingScript
+15:12:03.121 [nioEventLoopGroup-3-13] INFO c.m.s.WebGui [WebGui.java:230] onDisconnect - AtmosphereResourceEventImpl{ isCancelled=true isClosedByClient=false isClosedByApplication=false isResumedOnTimeout=false throwable=null resource=null} 00ae7d02-65a9-47a2-9e93-8dc3973d8df4
+15:12:03.123 [nioEventLoopGroup-3-13] INFO c.m.s.WebGui [WebGui.java:236] 00ae7d02-65a9-47a2-9e93-8dc3973d8df4 is canceled
