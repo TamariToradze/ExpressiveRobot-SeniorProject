@@ -1,0 +1,31 @@
+<ivysettings>
+   <settings defaultResolver="public"/>
+       <resolvers>
+         <chain name="public">
+            <!-- 
+              <url name="public-remote">
+                <ivy pattern="https://raw.githubusercontent.com/MyRobotLab/repo/develop/[organisation]/[revision]/ivy.xml"/>
+                <artifact pattern="https://raw.githubusercontent.com/MyRobotLab/repo/develop/[organisation]/[revision]/[artifact].[ext]"/>
+              </url>
+            -->
+            <!-- the mother load  -->
+            <ibiblio name="central" m2compatible="true" root="https://repo.maven.apache.org/maven2" />
+
+            <!-- all other mrl deps  -->
+            <ibiblio name="myrobotlab" m2compatible="true" root="https://myrobotlab-repo.s3.amazonaws.com/artifactory/myrobotlab" />
+
+            <!-- for sarxos webcam  -->
+            <ibiblio name="sarxos" m2compatible="true" root="https://oss.sonatype.org/content/repositories/snapshots" />
+
+            <ibiblio name="eclipse-release" m2compatible="true" root="https://repo.eclipse.org/content/groups/releases" />
+
+            <!-- sphinx  -->
+            <ibiblio name="oss-snapshots-repo" m2compatible="true" root="https://oss.sonatype.org/content/groups/public" />
+
+            <!-- Discord Bot - m2-dv8tion  -->
+            <ibiblio name="dv8tion" m2compatible="true" root="https://m2.dv8tion.net/releases" />
+
+        
+      </chain>
+    </resolvers>
+</ivysettings>    

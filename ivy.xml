@@ -1,0 +1,877 @@
+<ivy-module version="2.0" xmlns:extra="http://ant.apache.org/ivy/extra">
+
+  <info organisation="org.myrobotlab" module="myrobotlab-core"/>
+
+  <!-- the following configuration is for "runtime" -  
+       if this section is taken out - javadocs & sources come down 
+       -->
+  <configurations defaultconfmapping="compile->default">
+    <conf name="compile" description="Required to compile application"/>
+    <conf name="runtime" description="Additional run-time dependencies" extends="compile"/>
+    <conf name="test"    description="Required for test only" extends="runtime"/>
+  </configurations>    
+
+  <dependencies>
+
+  <!-- Arduino -->
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+
+  <!-- AudioFile -->
+  <dependency org="javazoom" name="jlayer" rev="1.0.1"/>
+  <dependency org="com.googlecode.soundlibs" name="mp3spi" rev="1.9.5.4"/>
+  <dependency org="com.googlecode.soundlibs" name="vorbisspi" rev="1.0.3.3"/>
+
+  <!-- AzureTranslator -->
+  <dependency org="com.squareup.okhttp3" name="okhttp" rev="3.9.0"/>
+
+  <!-- BoofCV -->
+  <dependency org="org.boofcv" name="boofcv-all" rev="0.40.1"/>
+
+  <!-- Chassis -->
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+  <dependency org="net.java.jinput" name="jinput" rev="2.0.9"/>
+  <dependency org="jinput-natives" name="jinput-natives" rev="2.0.7">
+    <artifact name="jinput-natives" type="zip" ext="zip" />
+  </dependency>
+
+  <!-- ChessGame -->
+  <dependency org="ChessBoard" name="ChessBoard" rev="1.0.0"/>
+
+  <!-- Cron -->
+  <dependency org="it.sauronsoftware.cron4j" name="cron4j" rev="2.2.5"/>
+
+  <!-- CsvConnector -->
+  <dependency org="net.sf.opencsv" name="opencsv" rev="2.3"/>
+
+  <!-- DiscordBot -->
+  <dependency org="net.dv8tion" name="JDA" rev="4.3.0_277">
+      <exclude  org="net.java.dev.jna"  name="jna" />
+  </dependency>
+
+  <!-- Docker -->
+  <dependency org="com.github.docker-java" name="docker-java" rev="3.2.13">
+      <exclude  org="io.netty"  name="*" />
+  </dependency>
+  <dependency org="io.netty" name="netty-all" rev="4.1.82.Final"/>
+
+  <!-- DocumentPipeline -->
+  <dependency org="org.apache.tika" name="tika-core" rev="2.8.0">
+      <exclude  org="org.slf4j"  name="*" />
+      <exclude  org="log4j"  name="*" />
+      <exclude  org="org.apache.logging.log4j"  name="*" />
+      <exclude  org="com.fasterxml.jackson.core"  name="*" />
+      <exclude  org="io.netty"  name="*" />
+  </dependency>
+  <dependency org="org.apache.tika" name="tika-parser-audiovideo-module" rev="2.8.0">
+      <exclude  org="org.slf4j"  name="*" />
+      <exclude  org="log4j"  name="*" />
+      <exclude  org="org.apache.logging.log4j"  name="*" />
+      <exclude  org="com.fasterxml.jackson.core"  name="*" />
+      <exclude  org="io.netty"  name="*" />
+  </dependency>
+  <dependency org="org.apache.opennlp" name="opennlp-tools" rev="1.6.0"/>
+  <dependency org="net.objecthunter" name="exp4j" rev="0.4.8"/>
+  <dependency org="org.sweble.wikitext" name="swc-engine" rev="3.1.7"/>
+  <dependency org="org.sweble.wom3" name="sweble-wom3-core" rev="3.1.7"/>
+  <dependency org="com.thoughtworks.xstream" name="xstream" rev="1.4.19"/>
+
+  <!-- EddieControlBoard -->
+  <dependency org="net.java.jinput" name="jinput" rev="2.0.9"/>
+  <dependency org="jinput-natives" name="jinput-natives" rev="2.0.7">
+    <artifact name="jinput-natives" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="com.1stleg" name="jnativehook" rev="2.0.3"/>
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+  <dependency org="org.jmdns" name="jmdns" rev="3.5.5"/>
+  <dependency org="org.atmosphere" name="nettosphere" rev="3.2.2">
+      <exclude  org="io.netty"  name="*" />
+      <exclude  org="logback-classic"  name="*" />
+      <exclude  org="logback-core"  name="*" />
+  </dependency>
+  <dependency org="javax.annotation" name="javax.annotation-api" rev="1.3.2"/>
+  <dependency org="io.netty" name="netty-all" rev="4.1.82.Final"/>
+
+  <!-- Elasticsearch -->
+  <dependency org="pl.allegro.tech" name="embedded-elasticsearch" rev="2.7.0"/>
+
+  <!-- Email -->
+  <dependency org="javax.mail" name="mail" rev="1.4.7"/>
+
+  <!-- FiniteStateMachine -->
+  <dependency org="com.github.pnavais" name="state-machine" rev="1.2.0"/>
+
+  <!-- Git -->
+  <dependency org="org.eclipse.jgit" name="org.eclipse.jgit" rev="6.6.1.202309021850-r"/>
+
+  <!-- GoogleCloud -->
+  <dependency org="com.google.cloud" name="google-cloud-vision" rev="2.1.3"/>
+
+  <!-- GoogleSearch -->
+  <dependency org="org.jsoup" name="jsoup" rev="1.15.3"/>
+
+  <!-- GoogleTranslate -->
+  <dependency org="com.google.cloud" name="google-cloud-translate" rev="2.2.0"/>
+  <dependency org="com.google.auth" name="google-auth-library-credentials" rev="1.3.0"/>
+
+  <!-- Gps -->
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+
+  <!-- HtmlFilter -->
+  <dependency org="org.jsoup" name="jsoup" rev="1.15.3"/>
+  <dependency org="org.apache.commons" name="commons-lang3" rev="3.3.2"/>
+
+  <!-- HtmlParser -->
+  <dependency org="org.jsoup" name="jsoup" rev="1.15.3"/>
+
+  <!-- ImapEmailConnector -->
+  <dependency org="javax.mail" name="mail" rev="1.4.7"/>
+
+  <!-- InMoov2 -->
+  <dependency org="fr.inmoov" name="inmoov2" rev="latest.integration">
+    <artifact name="inmoov2" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="javazoom" name="jlayer" rev="1.0.1"/>
+  <dependency org="com.googlecode.soundlibs" name="mp3spi" rev="1.9.5.4"/>
+  <dependency org="com.googlecode.soundlibs" name="vorbisspi" rev="1.0.3.3"/>
+  <dependency org="program-ab" name="program-ab-data" rev="latest.integration">
+    <artifact name="program-ab-data" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="program-ab" name="program-ab-kw" rev="0.0.8.10">
+      <exclude  org="ch.qos.logback"  name="logback-classic" />
+      <exclude  org="ch.qos.logback"  name="logback-core" />
+  </dependency>
+  <dependency org="com.fasterxml.jackson.dataformat" name="jackson-dataformat-xml" rev="2.14.0"/>
+  <dependency org="org.json" name="json" rev="20230227"/>
+  <dependency org="commons-io" name="commons-io" rev="2.15.1"/>
+  <dependency org="org.apache.lucene" name="lucene-analysis-common" rev="9.10.0"/>
+  <dependency org="org.apache.lucene" name="lucene-analysis-kuromoji" rev="9.10.0"/>
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+  <dependency org="org.bytedeco" name="javacv-platform" rev="1.5.11"/>
+  <dependency org="org.bytedeco" name="javacpp" rev="1.5.11"/>
+  <dependency org="org.bytedeco" name="openblas" rev="0.3.28-1.5.11"/>
+  <dependency org="com.github.sarxos" name="webcam-capture-driver-v4l4j" rev="0.3.13-SNAPSHOT"/>
+  <dependency org="org.apache.commons" name="commons-lang3" rev="3.3.2"/>
+  <dependency org="net.sf.jipcam" name="jipcam" rev="0.9.1">
+      <exclude  org="javax.servlet"  name="servlet-api" />
+      <exclude  org="log4j"  name="log4j" />
+      <exclude  org="org.apache.logging.log4j"  name="log4j-slf4j-impl" />
+      <exclude  org="commons-lang"  name="commons-lang" />
+  </dependency>
+  <dependency org="commons-lang" name="commons-lang" rev="2.6"/>
+  <dependency org="opencv" name="opencv_classifiers" rev="0.0.2">
+    <artifact name="opencv_classifiers" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="opencv" name="opencv_facedetectdnn" rev="1.0.1">
+    <artifact name="opencv_facedetectdnn" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="opencv" name="opencv_east_text_detection" rev="0.0.1">
+    <artifact name="opencv_east_text_detection" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="yolo" name="yolov2" rev="0.0.2">
+    <artifact name="yolov2" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="com.github.pnavais" name="state-machine" rev="1.2.0"/>
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+  <dependency org="org.bytedeco" name="javacv-platform" rev="1.5.11"/>
+  <dependency org="org.bytedeco" name="javacpp" rev="1.5.11"/>
+  <dependency org="org.bytedeco" name="openblas" rev="0.3.28-1.5.11"/>
+  <dependency org="com.github.sarxos" name="webcam-capture-driver-v4l4j" rev="0.3.13-SNAPSHOT"/>
+  <dependency org="org.apache.commons" name="commons-lang3" rev="3.3.2"/>
+  <dependency org="net.sf.jipcam" name="jipcam" rev="0.9.1">
+      <exclude  org="javax.servlet"  name="servlet-api" />
+      <exclude  org="log4j"  name="log4j" />
+      <exclude  org="org.apache.logging.log4j"  name="log4j-slf4j-impl" />
+      <exclude  org="commons-lang"  name="commons-lang" />
+  </dependency>
+  <dependency org="commons-lang" name="commons-lang" rev="2.6"/>
+  <dependency org="opencv" name="opencv_classifiers" rev="0.0.2">
+    <artifact name="opencv_classifiers" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="opencv" name="opencv_facedetectdnn" rev="1.0.1">
+    <artifact name="opencv_facedetectdnn" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="opencv" name="opencv_east_text_detection" rev="0.0.1">
+    <artifact name="opencv_east_text_detection" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="yolo" name="yolov2" rev="0.0.2">
+    <artifact name="yolov2" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="org.jsoup" name="jsoup" rev="1.15.3"/>
+  <dependency org="org.apache.commons" name="commons-lang3" rev="3.3.2"/>
+  <dependency org="leapmotion" name="leap" rev="2.1.3"/>
+  <dependency org="leapmotion" name="leap-win64" rev="2.1.3">
+    <artifact name="leap-win64" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="leapmotion" name="leap-mac64" rev="2.1.3">
+    <artifact name="leap-mac64" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="leapmotion" name="leap-linux64" rev="2.1.3">
+    <artifact name="leap-linux64" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+  <dependency org="io.github.ollama4j" name="ollama4j" rev="1.0.79">
+      <exclude  org="org.slf4j"  name="slf4j-api" />
+      <exclude  org="log4j"  name="log4j" />
+      <exclude  org="org.slf4j"  name="slf4j-log4j12" />
+  </dependency>
+  <dependency org="org.myrobotlab.audio" name="voice-effects" rev="1.0">
+    <artifact name="voice-effects" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="marytts" rev="5.2">
+    <artifact name="marytts" type="pom" ext="pom" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-bits1-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+      <exclude  org="org.slf4j"  name="slf4j-log4j12" />
+      <exclude  org="log4j"  name="log4j" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-bits3-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-cmu-bdl-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-cmu-nk-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-cmu-rms-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-cmu-slt-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+      <exclude  org="org.slf4j"  name="slf4j-log4j12" />
+      <exclude  org="log4j"  name="log4j" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-dfki-obadiah-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-dfki-ot-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-dfki-pavoque-neutral-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-dfki-poppy-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-dfki-prudence-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-dfki-spike-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-enst-camille-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-enst-dennys-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-istc-lucia-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-upmc-jessica-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-upmc-pierre-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+      <exclude  org="org.slf4j"  name="slf4j-api" />
+      <exclude  org="commons-io"  name="commons-io" />
+      <exclude  org="log4j"  name="log4j" />
+      <exclude  org="commons-lang"  name="commons-lang" />
+      <exclude  org="com.google.guava"  name="guava" />
+      <exclude  org="org.apache.opennlp"  name="opennlp-tools" />
+      <exclude  org="org.apache.opennlp"  name="opennlp-maxent" />
+      <exclude  org="org.slf4j"  name="slf4j-log4j12" />
+  </dependency>
+  <dependency org="org.apache.logging.log4j" name="log4j-1.2-api" rev="2.12.1"/>
+  <dependency org="org.apache.logging.log4j" name="log4j-api" rev="2.12.1"/>
+  <dependency org="javazoom" name="jlayer" rev="1.0.1"/>
+  <dependency org="com.googlecode.soundlibs" name="mp3spi" rev="1.9.5.4"/>
+  <dependency org="com.googlecode.soundlibs" name="vorbisspi" rev="1.0.3.3"/>
+  <dependency org="javazoom" name="jlayer" rev="1.0.1"/>
+  <dependency org="com.googlecode.soundlibs" name="mp3spi" rev="1.9.5.4"/>
+  <dependency org="com.googlecode.soundlibs" name="vorbisspi" rev="1.0.3.3"/>
+  <dependency org="net.sf.py4j" name="py4j" rev="0.10.9.7"/>
+  <dependency org="org.json" name="json" rev="20230227"/>
+  <dependency org="org.bytedeco" name="javacv-platform" rev="1.5.11"/>
+  <dependency org="org.bytedeco" name="javacpp" rev="1.5.11"/>
+  <dependency org="org.bytedeco" name="openblas" rev="0.3.28-1.5.11"/>
+  <dependency org="com.github.sarxos" name="webcam-capture-driver-v4l4j" rev="0.3.13-SNAPSHOT"/>
+  <dependency org="org.apache.commons" name="commons-lang3" rev="3.3.2"/>
+  <dependency org="net.sf.jipcam" name="jipcam" rev="0.9.1">
+      <exclude  org="javax.servlet"  name="servlet-api" />
+      <exclude  org="log4j"  name="log4j" />
+      <exclude  org="org.apache.logging.log4j"  name="log4j-slf4j-impl" />
+      <exclude  org="commons-lang"  name="commons-lang" />
+  </dependency>
+  <dependency org="commons-lang" name="commons-lang" rev="2.6"/>
+  <dependency org="opencv" name="opencv_classifiers" rev="0.0.2">
+    <artifact name="opencv_classifiers" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="opencv" name="opencv_facedetectdnn" rev="1.0.1">
+    <artifact name="opencv_facedetectdnn" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="opencv" name="opencv_east_text_detection" rev="0.0.1">
+    <artifact name="opencv_east_text_detection" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="yolo" name="yolov2" rev="0.0.2">
+    <artifact name="yolov2" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="simpleopenni" name="openni" rev="1.96"/>
+  <dependency org="org.myrobotlab.openni" name="openni-deps" rev="0.1">
+    <artifact name="openni-deps" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="javax.vecmath" name="vecmath" rev="1.5.2"/>
+  <dependency org="java3d" name="j3d-core" rev="1.3.1"/>
+  <dependency org="java3d" name="j3d-core-utils" rev="1.3.1"/>
+  <dependency org="net.sf.py4j" name="py4j" rev="0.10.9.7"/>
+  <dependency org="org.python" name="jython-standalone" rev="2.7.2"/>
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+  <dependency org="org.jmonkeyengine" name="jme3-core" rev="3.6.1-stable"/>
+  <dependency org="org.jmonkeyengine" name="jme3-desktop" rev="3.6.1-stable"/>
+  <dependency org="org.jmonkeyengine" name="jme3-lwjgl3" rev="3.6.1-stable"/>
+  <dependency org="org.jmonkeyengine" name="jme3-jogg" rev="3.6.1-stable"/>
+  <dependency org="org.jmonkeyengine" name="jme3-bullet" rev="3.3.2-stable"/>
+  <dependency org="org.jmonkeyengine" name="jme3-bullet-native" rev="3.3.2-stable"/>
+  <dependency org="org.jmonkeyengine" name="jme3-plugins" rev="3.6.1-stable"/>
+  <dependency org="org.jmonkeyengine" name="jme3-blender" rev="3.3.2-stable"/>
+  <dependency org="de.jarnbjo" name="j-ogg-all" rev="1.0.0"/>
+  <dependency org="org.lwjgl" name="lwjgl-opengl" rev="3.2.3"/>
+  <dependency org="org.lwjgl" name="lwjgl-glfw" rev="3.2.3"/>
+  <dependency org="io.vertx" name="vertx-core" rev="4.3.8">
+      <exclude  org="io.netty"  name="*" />
+  </dependency>
+  <dependency org="io.vertx" name="vertx-web" rev="4.3.8">
+      <exclude  org="io.netty"  name="*" />
+  </dependency>
+  <dependency org="io.netty" name="netty-all" rev="4.1.82.Final"/>
+
+  <!-- IndianTts -->
+  <dependency org="org.myrobotlab.audio" name="voice-effects" rev="1.0">
+    <artifact name="voice-effects" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="javazoom" name="jlayer" rev="1.0.1"/>
+  <dependency org="com.googlecode.soundlibs" name="mp3spi" rev="1.9.5.4"/>
+  <dependency org="com.googlecode.soundlibs" name="vorbisspi" rev="1.0.3.3"/>
+
+  <!-- JFugue -->
+  <dependency org="jfugue" name="jfugue" rev="5.0.7"/>
+
+  <!-- JMonkeyEngine -->
+  <dependency org="org.jmonkeyengine" name="jme3-core" rev="3.6.1-stable"/>
+  <dependency org="org.jmonkeyengine" name="jme3-desktop" rev="3.6.1-stable"/>
+  <dependency org="org.jmonkeyengine" name="jme3-lwjgl3" rev="3.6.1-stable"/>
+  <dependency org="org.jmonkeyengine" name="jme3-jogg" rev="3.6.1-stable"/>
+  <dependency org="org.jmonkeyengine" name="jme3-bullet" rev="3.3.2-stable"/>
+  <dependency org="org.jmonkeyengine" name="jme3-bullet-native" rev="3.3.2-stable"/>
+  <dependency org="org.jmonkeyengine" name="jme3-plugins" rev="3.6.1-stable"/>
+  <dependency org="org.jmonkeyengine" name="jme3-blender" rev="3.3.2-stable"/>
+  <dependency org="de.jarnbjo" name="j-ogg-all" rev="1.0.0"/>
+  <dependency org="org.lwjgl" name="lwjgl-opengl" rev="3.2.3"/>
+  <dependency org="org.lwjgl" name="lwjgl-glfw" rev="3.2.3"/>
+
+  <!-- Joystick -->
+  <dependency org="net.java.jinput" name="jinput" rev="2.0.9"/>
+  <dependency org="jinput-natives" name="jinput-natives" rev="2.0.7">
+    <artifact name="jinput-natives" type="zip" ext="zip" />
+  </dependency>
+
+  <!-- KafkaConnector -->
+  <dependency org="org.apache.kafka" name="kafka-clients" rev="1.0.1"/>
+
+  <!-- Keyboard -->
+  <dependency org="com.1stleg" name="jnativehook" rev="2.0.3"/>
+
+  <!-- LLM -->
+  <dependency org="io.github.ollama4j" name="ollama4j" rev="1.0.79">
+      <exclude  org="org.slf4j"  name="slf4j-api" />
+      <exclude  org="log4j"  name="log4j" />
+      <exclude  org="org.slf4j"  name="slf4j-log4j12" />
+  </dependency>
+
+  <!-- LeapMotion -->
+  <dependency org="leapmotion" name="leap" rev="2.1.3"/>
+  <dependency org="leapmotion" name="leap-win64" rev="2.1.3">
+    <artifact name="leap-win64" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="leapmotion" name="leap-mac64" rev="2.1.3">
+    <artifact name="leap-mac64" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="leapmotion" name="leap-linux64" rev="2.1.3">
+    <artifact name="leap-linux64" type="zip" ext="zip" />
+  </dependency>
+
+  <!-- Lidar -->
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+
+  <!-- LocalSpeech -->
+  <dependency org="org.myrobotlab.audio" name="voice-effects" rev="1.0">
+    <artifact name="voice-effects" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="javazoom" name="jlayer" rev="1.0.1"/>
+  <dependency org="com.googlecode.soundlibs" name="mp3spi" rev="1.9.5.4"/>
+  <dependency org="com.googlecode.soundlibs" name="vorbisspi" rev="1.0.3.3"/>
+
+  <!-- MarySpeech -->
+  <dependency org="org.myrobotlab.audio" name="voice-effects" rev="1.0">
+    <artifact name="voice-effects" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="marytts" rev="5.2">
+    <artifact name="marytts" type="pom" ext="pom" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-bits1-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+      <exclude  org="org.slf4j"  name="slf4j-log4j12" />
+      <exclude  org="log4j"  name="log4j" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-bits3-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-cmu-bdl-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-cmu-nk-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-cmu-rms-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-cmu-slt-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+      <exclude  org="org.slf4j"  name="slf4j-log4j12" />
+      <exclude  org="log4j"  name="log4j" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-dfki-obadiah-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-dfki-ot-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-dfki-pavoque-neutral-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-dfki-poppy-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-dfki-prudence-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-dfki-spike-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-enst-camille-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-enst-dennys-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-istc-lucia-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-upmc-jessica-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="de.dfki.mary" name="voice-upmc-pierre-hsmm" rev="5.2">
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+      <exclude  org="org.slf4j"  name="slf4j-api" />
+      <exclude  org="commons-io"  name="commons-io" />
+      <exclude  org="log4j"  name="log4j" />
+      <exclude  org="commons-lang"  name="commons-lang" />
+      <exclude  org="com.google.guava"  name="guava" />
+      <exclude  org="org.apache.opennlp"  name="opennlp-tools" />
+      <exclude  org="org.apache.opennlp"  name="opennlp-maxent" />
+      <exclude  org="org.slf4j"  name="slf4j-log4j12" />
+  </dependency>
+  <dependency org="org.apache.logging.log4j" name="log4j-1.2-api" rev="2.12.1"/>
+  <dependency org="org.apache.logging.log4j" name="log4j-api" rev="2.12.1"/>
+  <dependency org="javazoom" name="jlayer" rev="1.0.1"/>
+  <dependency org="com.googlecode.soundlibs" name="mp3spi" rev="1.9.5.4"/>
+  <dependency org="com.googlecode.soundlibs" name="vorbisspi" rev="1.0.3.3"/>
+
+  <!-- Mqtt -->
+  <dependency org="org.eclipse.paho" name="org.eclipse.paho.client.mqttv3" rev="1.2.1"/>
+
+  <!-- MqttBroker -->
+  <dependency org="io.moquette" name="moquette-broker" rev="0.15">
+      <exclude  org="com.fasterxml.jackson.core"  name="*" />
+      <exclude  org="io.netty"  name="*" />
+      <exclude  org="org.slf4j"  name="slf4j-log4j12" />
+  </dependency>
+  <dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.14.0"/>
+  <dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.14.0"/>
+  <dependency org="com.fasterxml.jackson.core" name="jackson-annotations" rev="2.14.0"/>
+  <dependency org="io.netty" name="netty-all" rev="4.1.82.Final"/>
+
+  <!-- MyoThalmic -->
+  <dependency org="com.github.nicholasastuart" name="myo-java" rev="0.9.1"/>
+
+  <!-- NovelAI -->
+  <dependency org="javazoom" name="jlayer" rev="1.0.1"/>
+  <dependency org="com.googlecode.soundlibs" name="mp3spi" rev="1.9.5.4"/>
+  <dependency org="com.googlecode.soundlibs" name="vorbisspi" rev="1.0.3.3"/>
+
+  <!-- OakD -->
+  <dependency org="net.sf.py4j" name="py4j" rev="0.10.9.7"/>
+
+  <!-- OculusDiy -->
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+
+  <!-- OculusRift -->
+  <dependency org="org.saintandreas" name="jovr" rev="1.8.0.0"/>
+  <dependency org="slick-util" name="slick-util" rev="1.0.0"/>
+  <dependency org="org.jscience" name="jscience" rev="4.3.1"/>
+  <dependency org="org.saintandreas" name="xres" rev="1.0.3"/>
+  <dependency org="org.saintandreas" name="oria-resources" rev="1.0.4">
+      <exclude  org="org.slf4j"  name="slf4j-api" />
+      <exclude  org="org.lwjgl.lwjgl"  name="lwjgl" />
+      <exclude  org="com.google.guava"  name="guava" />
+  </dependency>
+  <dependency org="org.bytedeco" name="javacv-platform" rev="1.5.11"/>
+  <dependency org="org.bytedeco" name="javacpp" rev="1.5.11"/>
+  <dependency org="org.bytedeco" name="openblas" rev="0.3.28-1.5.11"/>
+  <dependency org="com.github.sarxos" name="webcam-capture-driver-v4l4j" rev="0.3.13-SNAPSHOT"/>
+  <dependency org="org.apache.commons" name="commons-lang3" rev="3.3.2"/>
+  <dependency org="net.sf.jipcam" name="jipcam" rev="0.9.1">
+      <exclude  org="javax.servlet"  name="servlet-api" />
+      <exclude  org="log4j"  name="log4j" />
+      <exclude  org="org.apache.logging.log4j"  name="log4j-slf4j-impl" />
+      <exclude  org="commons-lang"  name="commons-lang" />
+  </dependency>
+  <dependency org="commons-lang" name="commons-lang" rev="2.6"/>
+  <dependency org="opencv" name="opencv_classifiers" rev="0.0.2">
+    <artifact name="opencv_classifiers" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="opencv" name="opencv_facedetectdnn" rev="1.0.1">
+    <artifact name="opencv_facedetectdnn" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="opencv" name="opencv_east_text_detection" rev="0.0.1">
+    <artifact name="opencv_east_text_detection" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="yolo" name="yolov2" rev="0.0.2">
+    <artifact name="yolov2" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="org.bytedeco" name="javacv-platform" rev="1.5.11"/>
+  <dependency org="org.bytedeco" name="javacpp" rev="1.5.11"/>
+  <dependency org="org.bytedeco" name="openblas" rev="0.3.28-1.5.11"/>
+  <dependency org="com.github.sarxos" name="webcam-capture-driver-v4l4j" rev="0.3.13-SNAPSHOT"/>
+  <dependency org="org.apache.commons" name="commons-lang3" rev="3.3.2"/>
+  <dependency org="net.sf.jipcam" name="jipcam" rev="0.9.1">
+      <exclude  org="javax.servlet"  name="servlet-api" />
+      <exclude  org="log4j"  name="log4j" />
+      <exclude  org="org.apache.logging.log4j"  name="log4j-slf4j-impl" />
+      <exclude  org="commons-lang"  name="commons-lang" />
+  </dependency>
+  <dependency org="commons-lang" name="commons-lang" rev="2.6"/>
+  <dependency org="opencv" name="opencv_classifiers" rev="0.0.2">
+    <artifact name="opencv_classifiers" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="opencv" name="opencv_facedetectdnn" rev="1.0.1">
+    <artifact name="opencv_facedetectdnn" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="opencv" name="opencv_east_text_detection" rev="0.0.1">
+    <artifact name="opencv_east_text_detection" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="yolo" name="yolov2" rev="0.0.2">
+    <artifact name="yolov2" type="zip" ext="zip" />
+  </dependency>
+
+  <!-- OpenCV -->
+  <dependency org="org.bytedeco" name="javacv-platform" rev="1.5.11"/>
+  <dependency org="org.bytedeco" name="javacpp" rev="1.5.11"/>
+  <dependency org="org.bytedeco" name="openblas" rev="0.3.28-1.5.11"/>
+  <dependency org="com.github.sarxos" name="webcam-capture-driver-v4l4j" rev="0.3.13-SNAPSHOT"/>
+  <dependency org="org.apache.commons" name="commons-lang3" rev="3.3.2"/>
+  <dependency org="net.sf.jipcam" name="jipcam" rev="0.9.1">
+      <exclude  org="javax.servlet"  name="servlet-api" />
+      <exclude  org="log4j"  name="log4j" />
+      <exclude  org="org.apache.logging.log4j"  name="log4j-slf4j-impl" />
+      <exclude  org="commons-lang"  name="commons-lang" />
+  </dependency>
+  <dependency org="commons-lang" name="commons-lang" rev="2.6"/>
+  <dependency org="opencv" name="opencv_classifiers" rev="0.0.2">
+    <artifact name="opencv_classifiers" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="opencv" name="opencv_facedetectdnn" rev="1.0.1">
+    <artifact name="opencv_facedetectdnn" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="opencv" name="opencv_east_text_detection" rev="0.0.1">
+    <artifact name="opencv_east_text_detection" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="yolo" name="yolov2" rev="0.0.2">
+    <artifact name="yolov2" type="zip" ext="zip" />
+  </dependency>
+
+  <!-- OpenNi -->
+  <dependency org="simpleopenni" name="openni" rev="1.96"/>
+  <dependency org="org.myrobotlab.openni" name="openni-deps" rev="0.1">
+    <artifact name="openni-deps" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="javax.vecmath" name="vecmath" rev="1.5.2"/>
+  <dependency org="java3d" name="j3d-core" rev="1.3.1"/>
+  <dependency org="java3d" name="j3d-core-utils" rev="1.3.1"/>
+
+  <!-- OpenWeatherMap -->
+  <dependency org="org.json" name="json" rev="20230227"/>
+
+  <!-- Osc -->
+  <dependency org="com.illposed.osc" name="javaosc-core" rev="0.4"/>
+
+  <!-- Pingdar -->
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+
+  <!-- Polly -->
+  <dependency org="org.myrobotlab.audio" name="voice-effects" rev="1.0">
+    <artifact name="voice-effects" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.14.0"/>
+  <dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.14.0"/>
+  <dependency org="com.fasterxml.jackson.core" name="jackson-annotations" rev="2.14.0"/>
+  <dependency org="com.amazonaws" name="aws-java-sdk-polly" rev="1.12.253">
+      <exclude  org="com.fasterxml.jackson.core"  name="jackson-core" />
+      <exclude  org="com.fasterxml.jackson.core"  name="jackson-databind" />
+      <exclude  org="com.fasterxml.jackson.core"  name="jackson-annotations" />
+      <exclude  org="org.apache.httpcomponents"  name="httpcore" />
+      <exclude  org="org.apache.httpcomponents"  name="httpclient" />
+  </dependency>
+  <dependency org="org.apache.commons" name="commons-lang3" rev="3.3.2"/>
+  <dependency org="javazoom" name="jlayer" rev="1.0.1"/>
+  <dependency org="com.googlecode.soundlibs" name="mp3spi" rev="1.9.5.4"/>
+  <dependency org="com.googlecode.soundlibs" name="vorbisspi" rev="1.0.3.3"/>
+
+  <!-- ProgramAB -->
+  <dependency org="program-ab" name="program-ab-data" rev="latest.integration">
+    <artifact name="program-ab-data" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="program-ab" name="program-ab-kw" rev="0.0.8.10">
+      <exclude  org="ch.qos.logback"  name="logback-classic" />
+      <exclude  org="ch.qos.logback"  name="logback-core" />
+  </dependency>
+  <dependency org="com.fasterxml.jackson.dataformat" name="jackson-dataformat-xml" rev="2.14.0"/>
+  <dependency org="org.json" name="json" rev="20230227"/>
+  <dependency org="commons-io" name="commons-io" rev="2.15.1"/>
+  <dependency org="org.apache.lucene" name="lucene-analysis-common" rev="9.10.0"/>
+  <dependency org="org.apache.lucene" name="lucene-analysis-kuromoji" rev="9.10.0"/>
+
+  <!-- Py4j -->
+  <dependency org="net.sf.py4j" name="py4j" rev="0.10.9.7"/>
+
+  <!-- Python -->
+
+  <!-- RSSConnector -->
+  <dependency org="rome" name="rome" rev="1.0"/>
+
+  <!-- RasPi -->
+  <dependency org="com.pi4j" name="pi4j-core" rev="1.4"/>
+  <dependency org="com.pi4j" name="pi4j-native" rev="1.4">
+    <artifact name="pi4j-native" type="pom" ext="pom" />
+  </dependency>
+
+  <!-- Rekognition -->
+  <dependency org="com.amazonaws" name="aws-java-sdk-rekognition" rev="1.11.263"/>
+
+  <!-- RemoteSpeech -->
+  <dependency org="javazoom" name="jlayer" rev="1.0.1"/>
+  <dependency org="com.googlecode.soundlibs" name="mp3spi" rev="1.9.5.4"/>
+  <dependency org="com.googlecode.soundlibs" name="vorbisspi" rev="1.0.3.3"/>
+
+  <!-- RoboClaw -->
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+
+  <!-- Roomba -->
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+
+  <!-- Runtime -->
+
+  <!-- Sabertooth -->
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+
+  <!-- Serial -->
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+
+  <!-- SlackBot -->
+  <dependency org="com.slack.api" name="bolt" rev="1.24.0"/>
+  <dependency org="com.slack.api" name="bolt-socket-mode" rev="1.24.0"/>
+  <dependency org="javax.websocket" name="javax.websocket-api" rev="1.1"/>
+  <dependency org="org.glassfish.tyrus.bundles" name="tyrus-standalone-client" rev="1.19"/>
+
+  <!-- Solr -->
+  <dependency org="org.apache.lucene" name="lucene-core" rev="9.10.0"/>
+  <dependency org="org.apache.solr" name="solr-core" rev="9.6.0">
+      <exclude  org="org.slf4j"  name="*" />
+      <exclude  org="log4j"  name="*" />
+      <exclude  org="org.apache.logging.log4j"  name="*" />
+      <exclude  org="com.fasterxml.jackson.core"  name="*" />
+      <exclude  org="io.netty"  name="*" />
+  </dependency>
+  <dependency org="org.apache.solr" name="solr-test-framework" rev="9.6.0">
+      <exclude  org="org.slf4j"  name="*" />
+      <exclude  org="log4j"  name="*" />
+      <exclude  org="org.apache.logging.log4j"  name="*" />
+      <exclude  org="com.fasterxml.jackson.core"  name="*" />
+      <exclude  org="io.netty"  name="*" />
+  </dependency>
+  <dependency org="org.apache.solr" name="solr-solrj" rev="9.6.0">
+      <exclude  org="org.slf4j"  name="*" />
+      <exclude  org="log4j"  name="*" />
+      <exclude  org="org.apache.logging.log4j"  name="*" />
+      <exclude  org="com.fasterxml.jackson.core"  name="*" />
+      <exclude  org="io.netty"  name="*" />
+  </dependency>
+  <dependency org="commons-io" name="commons-io" rev="2.15.1">
+      <exclude  org="org.apache.logging.log4j"  name="*" />
+  </dependency>
+  <dependency org="io.netty" name="netty-all" rev="4.1.82.Final"/>
+  <dependency org="org.glassfish.jersey.core" name="jersey-server" rev="3.1.5"/>
+
+  <!-- Sphinx -->
+  <dependency org="edu.cmu.sphinx" name="sphinx4-core" rev="5prealpha-SNAPSHOT"/>
+  <dependency org="edu.cmu.sphinx" name="sphinx4-data" rev="5prealpha-SNAPSHOT"/>
+
+  <!-- Ssc32UsbServoController -->
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+
+  <!-- TesseractOcr -->
+  <dependency org="org.bytedeco" name="tesseract" rev="5.5.0-1.5.11"/>
+  <dependency org="org.bytedeco" name="tesseract-platform" rev="5.5.0-1.5.11"/>
+  <dependency org="tesseract" name="tessdata" rev="0.0.2">
+    <artifact name="tessdata" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="org.bytedeco" name="openblas" rev="0.3.28-1.5.11"/>
+
+  <!-- Test -->
+  <dependency org="junit" name="junit" rev="4.13.1"/>
+
+  <!-- TopCodes -->
+  <dependency org="topcodes" name="topcodes" rev="1.0.0"/>
+
+  <!-- Tracking -->
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+  <dependency org="org.bytedeco" name="javacv-platform" rev="1.5.11"/>
+  <dependency org="org.bytedeco" name="javacpp" rev="1.5.11"/>
+  <dependency org="org.bytedeco" name="openblas" rev="0.3.28-1.5.11"/>
+  <dependency org="com.github.sarxos" name="webcam-capture-driver-v4l4j" rev="0.3.13-SNAPSHOT"/>
+  <dependency org="org.apache.commons" name="commons-lang3" rev="3.3.2"/>
+  <dependency org="net.sf.jipcam" name="jipcam" rev="0.9.1">
+      <exclude  org="javax.servlet"  name="servlet-api" />
+      <exclude  org="log4j"  name="log4j" />
+      <exclude  org="org.apache.logging.log4j"  name="log4j-slf4j-impl" />
+      <exclude  org="commons-lang"  name="commons-lang" />
+  </dependency>
+  <dependency org="commons-lang" name="commons-lang" rev="2.6"/>
+  <dependency org="opencv" name="opencv_classifiers" rev="0.0.2">
+    <artifact name="opencv_classifiers" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="opencv" name="opencv_facedetectdnn" rev="1.0.1">
+    <artifact name="opencv_facedetectdnn" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="opencv" name="opencv_east_text_detection" rev="0.0.1">
+    <artifact name="opencv_east_text_detection" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="yolo" name="yolov2" rev="0.0.2">
+    <artifact name="yolov2" type="zip" ext="zip" />
+  </dependency>
+
+  <!-- Twitter -->
+  <dependency org="org.twitter4j" name="twitter4j-core" rev="3.0.5"/>
+
+  <!-- Updater -->
+  <dependency org="org.eclipse.jgit" name="org.eclipse.jgit" rev="6.6.1.202309021850-r"/>
+
+  <!-- Vertx -->
+  <dependency org="io.vertx" name="vertx-core" rev="4.3.8">
+      <exclude  org="io.netty"  name="*" />
+  </dependency>
+  <dependency org="io.vertx" name="vertx-web" rev="4.3.8">
+      <exclude  org="io.netty"  name="*" />
+  </dependency>
+  <dependency org="io.netty" name="netty-all" rev="4.1.82.Final"/>
+
+  <!-- VirtualArduino -->
+  <dependency org="io.github.java-native" name="jssc" rev="2.9.4"/>
+
+  <!-- VoiceRss -->
+  <dependency org="org.myrobotlab.audio" name="voice-effects" rev="1.0">
+    <artifact name="voice-effects" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="com.voicerss" name="tts" rev="1.0"/>
+  <dependency org="javazoom" name="jlayer" rev="1.0.1"/>
+  <dependency org="com.googlecode.soundlibs" name="mp3spi" rev="1.9.5.4"/>
+  <dependency org="com.googlecode.soundlibs" name="vorbisspi" rev="1.0.3.3"/>
+
+  <!-- WebGui -->
+
+  <!-- Webcam -->
+  <dependency org="com.github.sarxos" name="webcam-capture-driver-v4l4j" rev="0.3.13-SNAPSHOT"/>
+
+  <!-- WebkitSpeechSynthesis -->
+  <dependency org="org.myrobotlab.audio" name="voice-effects" rev="1.0">
+    <artifact name="voice-effects" type="zip" ext="zip" />
+  </dependency>
+  <dependency org="javazoom" name="jlayer" rev="1.0.1"/>
+  <dependency org="com.googlecode.soundlibs" name="mp3spi" rev="1.9.5.4"/>
+  <dependency org="com.googlecode.soundlibs" name="vorbisspi" rev="1.0.3.3"/>
+
+  <!-- Wii -->
+  <dependency org="wiiusej" name="wiiusej" rev="wiiusej"/>
+
+  <!-- WiiDar -->
+  <dependency org="wiiusej" name="wiiusej" rev="wiiusej"/>
+
+  <!-- WikiDataFetcher -->
+  <dependency org="org.wikidata.wdtk" name="wdtk-client" rev="0.8.0">
+      <exclude  org="org.slf4j"  name="*" />
+      <exclude  org="org.apache.httpcomponents"  name="*" />
+  </dependency>
+  <dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.14.0"/>
+  <dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.14.0"/>
+  <dependency org="com.fasterxml.jackson.core" name="jackson-annotations" rev="2.14.0"/>
+
+  <!-- WolframAlpha -->
+  <dependency org="WolframAlpha" name="WolframAlpha" rev="1.1"/>
+
+  <!-- Xmpp -->
+  <dependency org="org.igniterealtime.smack" name="smack-java7" rev="4.1.6"/>
+  <dependency org="org.igniterealtime.smack" name="smack-tcp" rev="4.1.6"/>
+  <dependency org="org.igniterealtime.smack" name="smack-im" rev="4.1.6"/>
+  <dependency org="org.igniterealtime.smack" name="smack-extensions" rev="4.1.6"/>
+
+  </dependencies>
+
+
+</ivy-module>
