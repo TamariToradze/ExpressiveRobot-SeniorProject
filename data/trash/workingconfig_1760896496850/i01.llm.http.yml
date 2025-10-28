@@ -1,0 +1,5 @@
+!!org.myrobotlab.service.config.HttpClientConfig
+listeners: [
+  ]
+peers: null
+type: HttpClient

@@ -1,0 +1,12 @@
+!!org.myrobotlab.service.config.PythonConfig
+listeners: [
+  ]
+modulePaths: [
+  ]
+peers: null
+scriptRootDir: data\InMoov2
+startScripts: [
+  ]
+stopScripts: [
+  ]
+type: Python

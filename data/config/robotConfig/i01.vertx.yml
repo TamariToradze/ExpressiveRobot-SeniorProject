@@ -1,0 +1,12 @@
+!!org.myrobotlab.service.config.VertxConfig
+autoStartBrowser: true
+listeners: [
+  ]
+peers: null
+port: 8443
+root:
+- resource/WebGui/app
+- resource/InMoov2/peers/WebGui/app
+- resource
+ssl: true
+type: Vertx

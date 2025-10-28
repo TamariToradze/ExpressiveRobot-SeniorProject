@@ -1,0 +1,11 @@
+!!org.myrobotlab.service.config.ArduinoConfig
+connect: true
+listeners: [
+  ]
+peers:
+  serial:
+    autoStart: true
+    name: i01.eyeTracking.controller.serial
+    type: Serial
+port: null
+type: Arduino

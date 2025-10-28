@@ -1,0 +1,97 @@
+!!org.myrobotlab.service.config.InMoov2HeadConfig
+listeners: [
+  ]
+peers:
+  cheekLeft:
+    autoStart: false
+    name: i01.head.cheekLeft
+    type: Servo
+  cheekRight:
+    autoStart: false
+    name: i01.head.cheekRight
+    type: Servo
+  eyeLeftLR:
+    autoStart: false
+    name: i01.head.eyeLeftLR
+    type: Servo
+  eyeLeftUD:
+    autoStart: false
+    name: i01.head.eyeLeftUD
+    type: Servo
+  eyeRightLR:
+    autoStart: false
+    name: i01.head.eyeRightLR
+    type: Servo
+  eyeRightUD:
+    autoStart: false
+    name: i01.head.eyeRightUD
+    type: Servo
+  eyeX:
+    autoStart: true
+    name: i01.head.eyeX
+    type: Servo
+  eyeY:
+    autoStart: true
+    name: i01.head.eyeY
+    type: Servo
+  eyebrowLeft:
+    autoStart: false
+    name: i01.head.eyebrowLeft
+    type: Servo
+  eyebrowRight:
+    autoStart: false
+    name: i01.head.eyebrowRight
+    type: Servo
+  eyelidLeft:
+    autoStart: true
+    name: i01.head.eyelidLeft
+    type: Servo
+  eyelidLeftLower:
+    autoStart: false
+    name: i01.head.eyelidLeftLower
+    type: Servo
+  eyelidLeftUpper:
+    autoStart: false
+    name: i01.head.eyelidLeftUpper
+    type: Servo
+  eyelidRight:
+    autoStart: true
+    name: i01.head.eyelidRight
+    type: Servo
+  eyelidRightLower:
+    autoStart: false
+    name: i01.head.eyelidRightLower
+    type: Servo
+  eyelidRightUpper:
+    autoStart: false
+    name: i01.head.eyelidRightUpper
+    type: Servo
+  forheadLeft:
+    autoStart: false
+    name: i01.head.forheadLeft
+    type: Servo
+  forheadRight:
+    autoStart: false
+    name: i01.head.forheadRight
+    type: Servo
+  jaw:
+    autoStart: true
+    name: i01.head.jaw
+    type: Servo
+  neck:
+    autoStart: true
+    name: i01.head.neck
+    type: Servo
+  rollNeck:
+    autoStart: true
+    name: i01.head.rollNeck
+    type: Servo
+  rothead:
+    autoStart: true
+    name: i01.head.rothead
+    type: Servo
+  upperLip:
+    autoStart: false
+    name: i01.head.upperLip
+    type: Servo
+type: InMoov2Head

@@ -1,0 +1,9 @@
+!!org.myrobotlab.service.config.RandomConfig
+enabled: true
+listeners: [
+  ]
+peers: null
+randomMessages: {
+  }
+rate: 100
+type: Random

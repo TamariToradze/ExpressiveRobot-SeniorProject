@@ -1,0 +1,12 @@
+!!org.myrobotlab.service.config.RuntimeConfig
+id: cute-gadget
+listeners: [
+  ]
+locale: en-US
+logLevel: info
+peers: null
+registry: [
+  ]
+resource: resource
+type: Runtime
+virtual: false

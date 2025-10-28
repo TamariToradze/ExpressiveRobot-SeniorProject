@@ -1,0 +1,14 @@
+!!org.myrobotlab.service.config.MouthControlConfig
+animation: Theater Chase
+delaytime: 150
+delaytimeletter: 45
+delaytimestop: 150
+jaw: i01.head.upperLip
+listeners: [
+  ]
+mouth: i01.mouth
+mouthClosedPos: 90
+mouthOpenedPos: 120
+neoPixel: null
+peers: null
+type: MouthControl

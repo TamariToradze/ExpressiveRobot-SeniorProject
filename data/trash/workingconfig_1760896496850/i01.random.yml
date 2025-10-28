@@ -1,0 +1,63 @@
+!!org.myrobotlab.service.config.RandomConfig
+enabled: true
+listeners: [
+  ]
+peers: null
+randomMessages:
+  randomBlink:
+    data:
+    - max: null
+      min: null
+      set:
+      - blink()
+    enabled: false
+    maxIntervalMs: 30000
+    method: exec
+    minIntervalMs: 5000
+    service: python
+  i01.setHeadSpeed:
+    data:
+    - max: 20.0
+      min: 8.0
+      set: null
+    - max: 20.0
+      min: 8.0
+      set: null
+    - max: 20.0
+      min: 8.0
+      set: null
+    enabled: false
+    maxIntervalMs: 1000
+    method: setHeadSpeed
+    minIntervalMs: 200
+    service: i01
+  randomFace:
+    data:
+    - max: null
+      min: null
+      set:
+      - blink()
+      - halfSpeedFaceMove()
+    enabled: false
+    maxIntervalMs: 2000
+    method: exec
+    minIntervalMs: 1000
+    service: python
+  i01.moveHead:
+    data:
+    - max: 110.0
+      min: 70.0
+      set: null
+    - max: 115.0
+      min: 65.0
+      set: null
+    - max: 110.0
+      min: 70.0
+      set: null
+    enabled: false
+    maxIntervalMs: 1000
+    method: moveHead
+    minIntervalMs: 200
+    service: i01
+rate: 100
+type: Random

@@ -1,0 +1,10 @@
+!!org.myrobotlab.service.config.ServoMixerConfig
+autoDisable: true
+gesturesDir: data/ServoMixer/gestures
+listeners: [
+  ]
+mouth: null
+peers: null
+posesDir: data/ServoMixer/poses
+processor: python
+type: ServoMixer

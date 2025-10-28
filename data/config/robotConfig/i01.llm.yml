@@ -1,0 +1,23 @@
+!!org.myrobotlab.service.config.LLMConfig
+currentUserName: null
+defaultImagePrompt: What is this image?
+listeners: [
+  ]
+maxHistory: 5
+maxTokens: 256
+model: llama3
+password: null
+peers:
+  http:
+    autoStart: true
+    name: i01.llm.http
+    type: HttpClient
+sleepWord: sleep
+sleeping: false
+stream: true
+system: You are a helpful robot.
+temperature: 0.7
+timeout: 1000
+type: LLM
+url: null
+wakeWord: wake

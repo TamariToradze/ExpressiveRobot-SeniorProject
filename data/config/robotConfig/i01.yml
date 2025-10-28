@@ -1,0 +1,243 @@
+!!org.myrobotlab.service.config.InMoov2Config
+batteryInSystem: false
+customSound: false
+execScript: false
+flashOnErrors: true
+flashOnPir: false
+forceMicroOnIfSleeping: true
+healthCheckActivated: false
+healthCheckFlash: false
+healthCheckTimerMs: 60000
+heartbeat: true
+heartbeatFlash: false
+heartbeatInterval: 3000
+listeners:
+- callback: onI01
+  listener: powerUp
+  method: i01
+- callback: onBoot
+  listener: i01
+  method: publishBoot
+- callback: getResponse
+  listener: i01.chatBot
+  method: publishEvent
+- callback: onFlash
+  listener: i01.neoPixel
+  method: publishFlash
+- callback: onMove
+  listener: i01.head
+  method: publishMoveHead
+- callback: onMove
+  listener: i01.leftArm
+  method: publishMoveLeftArm
+- callback: onMove
+  listener: i01.leftHand
+  method: publishMoveLeftHand
+- callback: onMove
+  listener: i01.rightArm
+  method: publishMoveRightArm
+- callback: onMove
+  listener: i01.rightHand
+  method: publishMoveRightHand
+- callback: onMove
+  listener: i01.torso
+  method: publishMoveTorso
+- callback: onPlayAnimation
+  listener: i01.neoPixel
+  method: publishPlayAnimation
+- callback: onPlayAudioFile
+  listener: i01.audioPlayer
+  method: publishPlayAudioFile
+- callback: onPythonMessage
+  listener: python
+  method: publishProcessMessage
+- callback: onPython
+  listener: python
+  method: publishPython
+- callback: onStopAnimation
+  listener: i01.neoPixel
+  method: publishStopAnimation
+loadAppsScripts: true
+loadGestures: true
+loadInitScripts: true
+locale: null
+neoPixelDownloadBlue: true
+neoPixelErrorRed: true
+neoPixelFlashWhenSpeaking: false
+openCVFaceRecognizerActivated: true
+peers:
+  audioPlayer:
+    autoStart: true
+    name: i01.audioPlayer
+    type: AudioFile
+  chatBot:
+    autoStart: true
+    name: i01.chatBot
+    type: ProgramAB
+  controller3:
+    autoStart: false
+    name: i01.controller3
+    type: Arduino
+  controller4:
+    autoStart: false
+    name: i01.controller4
+    type: Arduino
+  ear:
+    autoStart: false
+    name: i01.ear
+    type: WebkitSpeechRecognition
+  eyeTracking:
+    autoStart: false
+    name: i01.eyeTracking
+    type: Tracking
+  fsm:
+    autoStart: false
+    name: i01.fsm
+    type: FiniteStateMachine
+  head:
+    autoStart: false
+    name: i01.head
+    type: InMoov2Head
+  headTracking:
+    autoStart: false
+    name: i01.headTracking
+    type: Tracking
+  htmlFilter:
+    autoStart: true
+    name: i01.htmlFilter
+    type: HtmlFilter
+  imageDisplay:
+    autoStart: false
+    name: i01.imageDisplay
+    type: ImageDisplay
+  leap:
+    autoStart: false
+    name: i01.leap
+    type: LeapMotion
+  left:
+    autoStart: false
+    name: i01.left
+    type: Arduino
+  leftArm:
+    autoStart: false
+    name: i01.leftArm
+    type: InMoov2Arm
+  leftHand:
+    autoStart: false
+    name: i01.leftHand
+    type: InMoov2Hand
+  llm:
+    autoStart: false
+    name: i01.llm
+    type: LLM
+  log:
+    autoStart: true
+    name: log
+    type: Log
+  mouth:
+    autoStart: false
+    name: i01.mouth
+    type: MarySpeech
+  mouth.audioFile:
+    autoStart: false
+    name: i01.mouth.audioFile
+    type: AudioFile
+  mouthControl:
+    autoStart: false
+    name: i01.mouthControl
+    type: MouthControl
+  neoPixel:
+    autoStart: false
+    name: i01.neoPixel
+    type: NeoPixel
+  oakd:
+    autoStart: false
+    name: i01.oakd
+    type: OakD
+  openWeatherMap:
+    autoStart: false
+    name: i01.openWeatherMap
+    type: OpenWeatherMap
+  opencv:
+    autoStart: false
+    name: i01.opencv
+    type: OpenCV
+  openni:
+    autoStart: false
+    name: i01.openni
+    type: OpenNi
+  pid:
+    autoStart: false
+    name: i01.pid
+    type: Pid
+  pir:
+    autoStart: false
+    name: i01.pir
+    type: Pir
+  py4j:
+    autoStart: false
+    name: i01.py4j
+    type: Py4j
+  python:
+    autoStart: true
+    name: python
+    type: Python
+  random:
+    autoStart: false
+    name: i01.random
+    type: Random
+  right:
+    autoStart: false
+    name: i01.right
+    type: Arduino
+  rightArm:
+    autoStart: false
+    name: i01.rightArm
+    type: InMoov2Arm
+  rightHand:
+    autoStart: false
+    name: i01.rightHand
+    type: InMoov2Hand
+  servoMixer:
+    autoStart: false
+    name: i01.servoMixer
+    type: ServoMixer
+  simulator:
+    autoStart: false
+    name: i01.simulator
+    type: JMonkeyEngine
+  torso:
+    autoStart: false
+    name: i01.torso
+    type: InMoov2Torso
+  ultrasonicLeft:
+    autoStart: false
+    name: i01.ultrasonicLeft
+    type: UltrasonicSensor
+  ultrasonicRight:
+    autoStart: false
+    name: i01.ultrasonicRight
+    type: UltrasonicSensor
+  vertx:
+    autoStart: false
+    name: i01.vertx
+    type: Vertx
+  webxr:
+    autoStart: false
+    name: i01.webxr
+    type: WebXR
+pirEnableTracking: false
+pirPlaySounds: false
+pirWakeUp: true
+reportOnBoot: true
+robotCanMoveHeadWhileSpeaking: true
+shutdownStartupSpeed: 50.0
+sleepTimeoutMs: 300000
+startupSound: true
+stateIdleInterval: 120
+stateRandomInterval: 120
+systemEventStateChange: true
+trackingTimeoutMs: 10000
+type: InMoov2
+unlockInsult: forgive me
+virtual: false

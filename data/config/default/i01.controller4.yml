@@ -1,0 +1,11 @@
+!!org.myrobotlab.service.config.ArduinoConfig
+connect: false
+listeners: [
+  ]
+peers:
+  serial:
+    autoStart: true
+    name: i01.controller4.serial
+    type: Serial
+port: null
+type: Arduino

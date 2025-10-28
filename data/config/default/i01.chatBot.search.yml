@@ -1,0 +1,7 @@
+!!org.myrobotlab.service.config.WikipediaConfig
+enabled: true
+listeners: [
+  ]
+maxSentencesReturned: 1
+peers: null
+type: Wikipedia

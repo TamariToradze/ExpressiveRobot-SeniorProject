@@ -1,0 +1,32 @@
+!!org.myrobotlab.service.config.WebXRConfig
+controllerMappings:
+  head.orientation.pitch:
+    i01.head.neck: !!org.myrobotlab.math.MapperSimple
+      clip: true
+      inverted: false
+      maxIn: 0.5
+      maxOut: 180.0
+      minIn: -0.5
+      minOut: 0.0
+  head.orientation.roll:
+    i01.head.roll: !!org.myrobotlab.math.MapperSimple
+      clip: true
+      inverted: false
+      maxIn: 0.5
+      maxOut: 180.0
+      minIn: -0.5
+      minOut: 0.0
+  head.orientation.yaw:
+    i01.head.rothead: !!org.myrobotlab.math.MapperSimple
+      clip: true
+      inverted: false
+      maxIn: 0.5
+      maxOut: 180.0
+      minIn: -0.5
+      minOut: 0.0
+eventMappings: {
+  }
+listeners: [
+  ]
+peers: null
+type: WebXR

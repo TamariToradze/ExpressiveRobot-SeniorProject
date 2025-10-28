@@ -1,0 +1,6 @@
+!!org.myrobotlab.service.config.SerialConfig
+listeners: [
+  ]
+peers: null
+port: COM11
+type: Serial

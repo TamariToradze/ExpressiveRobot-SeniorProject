@@ -1,0 +1,13 @@
+!!org.myrobotlab.service.config.OakDConfig
+displayWeb: true
+listeners:
+- callback: onPythonMessage
+  listener: i01.oakd.py4j
+  method: publishProcessMessage
+peers:
+  py4j:
+    autoStart: true
+    name: i01.oakd.py4j
+    type: Py4j
+py4jInstall: true
+type: OakD

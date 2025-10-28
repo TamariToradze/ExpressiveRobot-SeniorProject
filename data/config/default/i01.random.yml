@@ -1,0 +1,248 @@
+!!org.myrobotlab.service.config.RandomConfig
+enabled: false
+listeners: [
+  ]
+peers: null
+randomMessages:
+  i01.setRightHandSpeed:
+    data:
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    enabled: true
+    maxIntervalMs: 8000
+    method: setRightHandSpeed
+    minIntervalMs: 3000
+    service: i01
+  i01.moveLeftArm:
+    data:
+    - max: 5.0
+      min: 0.0
+      set: null
+    - max: 95.0
+      min: 85.0
+      set: null
+    - max: 30.0
+      min: 25.0
+      set: null
+    - max: 15.0
+      min: 10.0
+      set: null
+    enabled: true
+    maxIntervalMs: 8000
+    method: moveLeftArm
+    minIntervalMs: 0
+    service: i01
+  i01.moveLeftHand:
+    data:
+    - max: 160.0
+      min: 10.0
+      set: null
+    - max: 60.0
+      min: 10.0
+      set: null
+    - max: 60.0
+      min: 10.0
+      set: null
+    - max: 60.0
+      min: 10.0
+      set: null
+    - max: 60.0
+      min: 10.0
+      set: null
+    - max: 175.0
+      min: 130.0
+      set: null
+    enabled: true
+    maxIntervalMs: 8000
+    method: moveLeftHand
+    minIntervalMs: 3000
+    service: i01
+  i01.setTorsoSpeed:
+    data:
+    - max: 5.0
+      min: 2.0
+      set: null
+    - max: 5.0
+      min: 2.0
+      set: null
+    - max: 5.0
+      min: 2.0
+      set: null
+    enabled: true
+    maxIntervalMs: 8000
+    method: setTorsoSpeed
+    minIntervalMs: 3000
+    service: i01
+  i01.moveTorso:
+    data:
+    - max: 95.0
+      min: 85.0
+      set: null
+    - max: 93.0
+      min: 88.0
+      set: null
+    - max: 110.0
+      min: 70.0
+      set: null
+    enabled: true
+    maxIntervalMs: 8000
+    method: moveTorso
+    minIntervalMs: 3000
+    service: i01
+  i01.moveRightArm:
+    data:
+    - max: 5.0
+      min: 0.0
+      set: null
+    - max: 95.0
+      min: 85.0
+      set: null
+    - max: 30.0
+      min: 25.0
+      set: null
+    - max: 15.0
+      min: 10.0
+      set: null
+    enabled: true
+    maxIntervalMs: 8000
+    method: moveRightArm
+    minIntervalMs: 3000
+    service: i01
+  i01.setLeftHandSpeed:
+    data:
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    enabled: true
+    maxIntervalMs: 8000
+    method: setLeftHandSpeed
+    minIntervalMs: 3000
+    service: i01
+  i01.setHeadSpeed:
+    data:
+    - max: 20.0
+      min: 8.0
+      set: null
+    - max: 20.0
+      min: 8.0
+      set: null
+    - max: 20.0
+      min: 8.0
+      set: null
+    enabled: true
+    maxIntervalMs: 8000
+    method: setHeadSpeed
+    minIntervalMs: 3000
+    service: i01
+  i01.setLeftArmSpeed:
+    data:
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    enabled: true
+    maxIntervalMs: 8000
+    method: setLeftArmSpeed
+    minIntervalMs: 3000
+    service: i01
+  i01.setRightArmSpeed:
+    data:
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    - max: 25.0
+      min: 8.0
+      set: null
+    enabled: true
+    maxIntervalMs: 8000
+    method: setRightArmSpeed
+    minIntervalMs: 3000
+    service: i01
+  i01.moveRightHand:
+    data:
+    - max: 160.0
+      min: 10.0
+      set: null
+    - max: 60.0
+      min: 10.0
+      set: null
+    - max: 60.0
+      min: 10.0
+      set: null
+    - max: 60.0
+      min: 10.0
+      set: null
+    - max: 60.0
+      min: 10.0
+      set: null
+    - max: 175.0
+      min: 130.0
+      set: null
+    enabled: true
+    maxIntervalMs: 8000
+    method: moveRightHand
+    minIntervalMs: 3000
+    service: i01
+  i01.moveHead:
+    data:
+    - max: 110.0
+      min: 70.0
+      set: null
+    - max: 115.0
+      min: 65.0
+      set: null
+    - max: 110.0
+      min: 70.0
+      set: null
+    enabled: true
+    maxIntervalMs: 8000
+    method: moveHead
+    minIntervalMs: 3000
+    service: i01
+rate: 100
+type: Random

@@ -1,0 +1,6 @@
+!!org.myrobotlab.service.config.LogConfig
+level: info
+listeners: [
+  ]
+peers: null
+type: Log

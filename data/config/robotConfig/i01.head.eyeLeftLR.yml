@@ -1,0 +1,21 @@
+!!org.myrobotlab.service.config.ServoConfig
+autoDisable: true
+clip: true
+controller: arduino
+enabled: false
+idleTimeout: 3000
+inverted: true
+listeners: [
+  ]
+maxIn: 180.0
+maxOut: 180.0
+minIn: 0.0
+minOut: 0.0
+peers: null
+pin: '9'
+rest: 90.0
+speed: null
+sweepMax: 180.0
+sweepMin: 0.0
+synced: null
+type: Servo

@@ -1,0 +1,48 @@
+!!org.myrobotlab.service.config.FiniteStateMachineConfig
+listeners:
+- callback: publishStateChange
+  listener: i01
+  method: publishStateChange
+peers: null
+start: boot
+transitions:
+- event: wake
+  from: boot
+  to: wake
+- event: setup_done
+  from: setup
+  to: idle
+- event: idle
+  from: random
+  to: idle
+- event: sleep
+  from: idle
+  to: sleep
+- event: power_down
+  from: idle
+  to: power_down
+- event: random
+  from: idle
+  to: random
+- event: wake
+  from: sleep
+  to: wake
+- event: power_down
+  from: sleep
+  to: power_down
+- event: setup
+  from: wake
+  to: setup
+- event: idle
+  from: wake
+  to: idle
+- event: setup
+  from: idle
+  to: setup
+- event: track
+  from: idle
+  to: isTracking
+- event: stopTrack
+  from: isTracking
+  to: idle
+type: FiniteStateMachine

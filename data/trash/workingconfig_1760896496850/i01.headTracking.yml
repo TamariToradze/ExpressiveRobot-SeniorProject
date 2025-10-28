@@ -1,0 +1,27 @@
+!!org.myrobotlab.service.config.TrackingConfig
+enabled: false
+listeners: [
+  ]
+lostTrackingDelayMs: 1000
+peers:
+  controller:
+    autoStart: true
+    name: i01.headTracking.controller
+    type: Arduino
+  cv:
+    autoStart: true
+    name: i01.headTracking.cv
+    type: OpenCV
+  pan:
+    autoStart: true
+    name: i01.headTracking.pan
+    type: Servo
+  pid:
+    autoStart: true
+    name: i01.headTracking.pid
+    type: Pid
+  tilt:
+    autoStart: true
+    name: i01.headTracking.tilt
+    type: Servo
+type: Tracking

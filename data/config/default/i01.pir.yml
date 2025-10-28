@@ -1,0 +1,14 @@
+!!org.myrobotlab.service.config.PirConfig
+controller: i01.left
+enable: true
+listeners:
+- callback: onPirOn
+  listener: i01
+  method: publishPirOn
+- callback: onPirOff
+  listener: i01
+  method: publishPirOff
+peers: null
+pin: D23
+rate: 1
+type: Pir

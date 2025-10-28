@@ -1,0 +1,15 @@
+!!org.myrobotlab.service.config.MarySpeechConfig
+blocking: false
+listeners: [
+  ]
+mute: false
+peers:
+  audioFile:
+    autoStart: true
+    name: i01.mouth.audioFile
+    type: AudioFile
+speechRecognizers:
+- i01.ear
+substitutions: null
+type: MarySpeech
+voice: null

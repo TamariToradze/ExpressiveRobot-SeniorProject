@@ -1,0 +1,12 @@
+!!org.myrobotlab.service.config.JMonkeyEngineConfig
+cameraLookAt: null
+listeners: [
+  ]
+models: [
+  ]
+multiMapped: {
+  }
+nodes: {
+  }
+peers: null
+type: JMonkeyEngine

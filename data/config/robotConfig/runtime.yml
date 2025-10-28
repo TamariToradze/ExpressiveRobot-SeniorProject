@@ -1,0 +1,99 @@
+!!org.myrobotlab.service.config.RuntimeConfig
+id: unequaled-saturn3
+listeners:
+- callback: onCreated
+  listener: python
+  method: created
+- callback: onCreated
+  listener: i01
+  method: created
+- callback: onConfigFinished
+  listener: i01
+  method: publishConfigFinished
+- callback: onConfigList
+  listener: i01
+  method: publishConfigList
+- callback: onConfigStarted
+  listener: i01
+  method: publishConfigStarted
+- callback: onRegistered
+  listener: webgui
+  method: registered
+- callback: registered
+  listener: intro
+  method: registered
+- callback: onRegistered
+  listener: python
+  method: registered
+- callback: onRegistered
+  listener: i01
+  method: registered
+- callback: onReleased
+  listener: webgui
+  method: released
+- callback: released
+  listener: intro
+  method: released
+- callback: onReleased
+  listener: python
+  method: released
+- callback: onReleased
+  listener: i01
+  method: released
+- callback: onShutdown
+  listener: python
+  method: shutdown
+- callback: onShutdown
+  listener: i01
+  method: shutdown
+- callback: onStarted
+  listener: python
+  method: started
+- callback: onStarted
+  listener: i01
+  method: started
+- callback: onStopped
+  listener: python
+  method: stopped
+- callback: onStopped
+  listener: i01
+  method: stopped
+locale: en-US
+logLevel: info
+peers: null
+registry:
+- log
+- security
+- webgui
+- intro
+- python
+- i01.audioPlayer
+- i01.chatBot.search
+- i01.chatBot
+- i01.htmlFilter
+- watchMicro
+- i01.fsm
+- i01
+- arduino.serial
+- arduino
+- servo01
+- i01.mouth.audioFile
+- i01.mouth
+- i01.ear
+- i01.head
+- i01.mouthControl
+- i01.head.jaw
+- pca
+- i01.head.cheekRight
+- i01.head.cheekLeft
+- i01.head.eyebrowRight
+- i01.head.eyebrowLeft
+- i01.head.forheadRight
+- i01.head.forheadLeft
+- i01.head.eyelidLeftUpper
+- i01.head.eyelidLeftLower
+- i01.head.eyelidRightUpper
+- i01.head.eyelidRightLower
+resource: resource
+type: Runtime
+virtual: false

@@ -1,0 +1,27 @@
+!!org.myrobotlab.service.config.TrackingConfig
+enabled: false
+listeners: [
+  ]
+lostTrackingDelayMs: 1000
+peers:
+  controller:
+    autoStart: true
+    name: i01.eyeTracking.controller
+    type: Arduino
+  cv:
+    autoStart: true
+    name: i01.eyeTracking.cv
+    type: OpenCV
+  pan:
+    autoStart: true
+    name: i01.eyeTracking.pan
+    type: Servo
+  pid:
+    autoStart: true
+    name: i01.eyeTracking.pid
+    type: Pid
+  tilt:
+    autoStart: true
+    name: i01.eyeTracking.tilt
+    type: Servo
+type: Tracking

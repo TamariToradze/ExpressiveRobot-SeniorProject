@@ -1,0 +1,8 @@
+!!org.myrobotlab.service.config.Py4jConfig
+autostartPython: true
+listeners: [
+  ]
+peers: null
+scriptRootDir: null
+type: Py4j
+useBundledPython: true

@@ -1,0 +1,11 @@
+!!org.myrobotlab.service.config.ArduinoConfig
+connect: true
+listeners: [
+  ]
+peers:
+  serial:
+    autoStart: true
+    name: arduino.serial
+    type: Serial
+port: COM5
+type: Arduino
